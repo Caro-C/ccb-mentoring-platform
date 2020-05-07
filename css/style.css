@@ -1,0 +1,612 @@
+
+:root{
+  /* variables for font families*/
+  --Montserrat: 'Montserrat', sans-serif;
+  --HerrVonMuellerhoff: 'Herr Von Muellerhoff', cursive;
+  --Caveat: 'Caveat', cursive;
+  /* variables for colors*/
+  --text-gray: #000000;
+  --text-link: #A8A8A8;
+  --text-gold: #DAA520;
+}
+
+/* incude padding&margin in element's total width&height, hide overflow on x-axis */
+html, body{
+  margin: 0%;
+  box-sizing: border-box;
+  overflow-x: hidden;
+  font-family: var(--Montserrat);
+  line-height: 1.8;
+}
+
+/* ----------------- Global Classes -------------------*/
+
+a{
+  color: var(--text-gray);
+  text-decoration: none;
+}
+
+.flex-row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+ul{
+  list-style-type: none;
+}
+
+h1{
+  font-family: var(--Caveat);
+  font-style: italic;
+  font-size: 3rem;
+  font-weight: 100;
+  letter-spacing: 0.2rem;
+  margin: 1.5rem;
+  margin-bottom: 0 !important;
+}
+
+h2{
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+}
+
+h3{
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: var(--text-gold);
+  text-transform: uppercase;
+  border-top-style: solid;
+  border-top-width:thin;
+  border-top-color:var(--text-gold);
+  display: inline;
+  padding: 0.3rem;
+}
+
+.container{
+  margin: 0.5vh;
+}
+
+
+/* --------x--------- Global Classes ----------x---------*/
+
+/*------------- navigation bar -------------*/
+.nav-bar{
+  background: white;
+  padding: 0 2rem;
+  height: 0rem; /* for extended nav-bar*/
+  min-height: 60px; /* for stacked nav-bar in smaller devices*/
+  overflow: hidden;
+  transition: height 1s ease-in-out;
+  z-index: 10;
+  /*border: thick solid red;*/
+}
+
+.nav-menue{
+  justify-content: space-between;
+  /*border: thick solid yellow;*/
+}
+
+.toggle-collapse{
+  position: absolute;
+  top: 0%;
+  width: 83%;
+  cursor: pointer;
+  display: none;
+  /*border: thick solid grey;*/
+}
+
+.toggle-icon{
+  display: flex;
+  justify-content: flex-end;
+  padding: 1.5rem 0;
+}
+
+.toggle-icon i{
+  font-size: 1.4rem;
+  color: var(--text-gray);
+}
+
+.collapse{
+  height: 40rem;
+}
+
+.nav-items{
+  display: flex;
+  margin: 0;
+  /*border: thick solid blue;*/
+}
+
+.nav-link{
+  padding: 1.6rem 1rem;
+  font-size: 0.81rem;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.nav-link a{
+  color: var(--text-gray);
+}
+
+.nav-link a:hover{
+  color: var(--text-gold);
+}
+
+.nav-brand a{
+  font-size: 0.8rem;
+  font-weight: 100;
+  padding: 1.6rem 0;
+  display: block;
+  font-family: var(--Caveat);
+  /*border: thick solid black;*/
+}
+
+.social{
+  padding: 1.4rem 0;
+  display: flex;
+  flex-grow: 1;
+  justify-content: flex-end;
+  /*border: thick solid green;*/
+}
+
+.social a{
+  color: var(--text-gray);
+}
+
+.social i:hover{
+  color: var(--text-gold);
+}
+
+.social i{
+  padding: 0.2rem;
+}
+/*-------x------ navigation bar ------x-------*/
+
+/*----------- Main Content ----------------*/
+
+/*----------- Site Title ----------------*/
+.site-title{
+  height: 25%;
+  display: flex;
+  justify-content: center;
+  padding: 1.2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  color: var(--text-gray);
+  font-family: var(--Montserrat);
+}
+
+#slogan{
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+/*-----x------ Site Title --------x--------*/
+
+/*------------Slide Show ---------------->*/
+.blog-content{
+  position: relative;
+}
+
+.custom-overlay{
+  position: absolute;
+  top: 0%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  text-align: center;
+  background-color: rgba(255,255,255,0.7);
+  opacity: 1;
+  transition: all 400ms ease-in-out;
+  height: 100%;
+}
+
+.custom-overlay h2{
+  position: relative;
+  font-size: 1rem;
+}
+
+.content{
+  position: absolute;
+  top: 50%;
+  left:1%;
+  right: 1%;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  font-weight:100;
+  transform: translateY(-50%);
+}
+
+.custom-overlay h3{
+  color: var(--text-gray);
+}
+
+.owl-dot.active{
+  outline: none !important;
+}
+
+/*-------x-----Slide Show ---------x-------*/
+
+/*------------Site Content-------------------*/
+
+.site-content{
+  display: grid;
+  grid-template-columns: 4.5fr 1.5fr;
+  grid-gap: 2rem;
+  /*border: thick solid green;*/
+}
+
+.main-blog-posts{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 2rem;
+  /*border: thick solid gray;*/
+}
+
+.post-number-x{
+  width: 35%;
+  overflow-wrap: break-word;
+  padding: 2rem;
+  margin: 0.6rem -1rem 2rem -1rem;
+  /*border: thick solid red;*/
+}
+
+.post-header{
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.post-text{
+  font-size: 0.9rem;
+  padding-top: 0.8rem;
+}
+
+.post-image{
+  text-align: center;
+  overflow: hidden;
+  padding-bottom: 1rem;
+}
+
+.img{
+  width: 100%;
+}
+
+.read-more a{
+  font-size: 0.7rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--text-gold);
+}
+
+.side-bar-posts{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 2rem;
+}
+
+.side-bar-post-x{
+  width: 85%;
+  overflow-wrap: break-word;
+  padding-top: 1.9rem;
+  /*border: thick solid red;*/
+}
+
+#about-me{
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--text-gold);
+  font-size: 1rem;
+  padding-bottom: 0.6rem;
+}
+
+#intro{
+  padding: 0.7rem;
+  text-align: left;
+  font-size: 0.9rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.profile-pic{
+  text-align: center;
+}
+
+#profile-pic{
+  width: 100%;
+}
+
+#favorite-posts{
+  text-transform: uppercase;
+  text-align: center;
+  color: var(--text-gold);
+  font-size: 1rem;
+  padding-bottom: 1rem;
+}
+
+#side-bar-collection{
+  font-size: 0.8rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-align: center;
+}
+/*-----x-------Site Content---------x----------*/
+
+/*------x----- Main Content ------x----------*/
+
+/*-------------- Footer--------------------*/
+.footer{
+  height: 100%;
+  background: #f2f4f7;
+  position: relative;
+}
+ .footer-container{
+   display: grid;
+   grid-template-columns: repeat(4, 1fr);
+ }
+
+ .footer-container > div{
+   display: flex;
+   flex-wrap: wrap;
+   padding: 2.5rem;
+   text-transform: uppercase;
+   font-size: 0.7rem;
+   justify-content: center;
+ }
+
+ .move-up{
+   position: absolute;
+   right: 1%;
+   cursor: pointer;
+ }
+
+/*-------x------- Footer-----------x---------*/
+
+/*----------------Main-Pages-------------------*/
+.page-gold a{
+  color: var(--text-gold) !important;
+}
+
+#page-slogan{
+  margin-top: 2.2rem;
+  font-size: 1.8rem !important;
+  text-transform: uppercase;
+  /*border: thick solid red;*/
+}
+
+.page-main-posts{
+  padding-top: 0;
+}
+
+.page-side-bar{
+  padding-top: 0;
+}
+
+/*-------x---------Main-Pages----------x---------*/
+
+/*----------------Single-Post-Pages-------------------*/
+.single-content{
+  display: grid;
+  grid-template-columns: 4.5fr 1.5fr;
+  grid-gap: 2rem;
+  /*border: thick solid green;*/
+}
+
+.single-blog-post{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 0.8rem;
+}
+
+.single-post-header{
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.single-post-image{
+  text-align: center;
+  overflow: hidden;
+}
+
+.single-post-image > img{
+  width: 85%;
+}
+
+.single-short-text{
+  font-style: italic;
+  font-size: 0.9rem;
+  padding: 30px 7.5% 0 7.5%;
+}
+
+.single-post-text{
+  font-size: 0.9rem;
+  padding: 5% 7.5% 5% 7.5%;
+}
+/*--------x--------Single-Post-Pages---------x----------*/
+
+/*----------------Contact/Datenschutz/Impressum Pages------------------------*/
+.contact-text{
+  text-align: left;
+}
+
+#contact-header{
+  text-align: left;
+  padding-left: 7.5%;
+}
+
+#linkedin-gold{
+  color: var(--text-gold);
+}
+/*--------x--------Contact/Datenschutz/Impressum Pages-------------x-----------*/
+
+/*-----------Make pages respoinsive with media-queries------------*/
+
+/* ------ viewport more than 891px ----------*/
+@media only screen and (min-width: 891px){
+  .post-number-x{
+    width: 40%;
+    padding: 0.5rem;
+  }
+  .nav-bar{
+    position: fixed;
+    width: 95%;
+    height:4rem;
+  }
+  .site-title{
+    padding-top: 5rem;
+  }
+}
+
+/* ------ viewport less then or equal to 890px ----------*/
+@media only screen and (max-width: 890px){
+  .post-number-x{
+    width: 40%;
+    padding: 0.5rem;
+    padding-bottom: 0rem !important;
+  }
+  .site-content{
+    grid-template-columns: 100%;
+  }
+  .side-bar-posts{
+    align-items: center;
+    padding-top: 0;
+  }
+  .side-bar-post-x{
+    padding-top: 1rem;
+    width: 50%;
+  }
+  .nav-bar{
+    position: fixed;
+    width: 95%;
+  }
+  .site-title{
+    padding-top: 5rem;
+    height: 15rem;
+  }
+  #page-slogan{
+    padding-bottom: 3rem !important;
+  }
+  .single-content{
+    grid-template-columns: 100%;
+  }
+  .single-title{
+    height: 9rem;
+  }
+  .single-post-image > img{
+    width: 83%;
+  }
+}
+
+/* ------ viewport less then or equal to 783px ----------*/
+@media only screen and (max-width: 783px){
+  .nav-items{
+    padding-top: 0.5rem;
+  }
+  .nav-menue, .nav-items{
+    flex-direction: column;
+  }
+  .toggle-collapse{
+    display: initial;
+  }
+  .social{
+    justify-content: flex-start;
+    padding-left: 50px;
+  }
+  h1{
+    font-size:2.5rem;
+  }
+  h3{
+    font-size: 0.7rem;
+  }
+  #slogan{
+   font-size: 0.9rem !important;
+  }
+  .nav-bar{
+    position: relative;
+  }
+  .site-title{
+    padding-top: 1.7rem;
+    height: 14rem;
+  }
+  .single-title{
+    height: 8rem;
+  }
+}
+
+/* ------ viewport less then or equal to 630px ----------*/
+@media only screen and (max-width: 630px){
+  .post-number-x{
+    width: 80% !important;
+  }
+  .side-bar-post-x{
+    width: 80%;
+  }
+  .page-title{
+    padding-bottom: 0;
+    margin-bottom: 0;
+  }
+  .single-blog-post > div{
+    width: 78%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .single-post-image > img{
+    width: 100%;
+  }
+  .single-blog-post{
+    align-items: center;
+  }
+  .single-title{
+    height: 10rem;
+  }
+}
+
+/* ------ viewport less then or equal to 470px ----------*/
+@media only screen and (max-width: 470px){
+  .toggle-icon{
+    width: 90%;
+  }
+  .footer-container{
+    grid-template-columns: 100%;
+  }
+  .contact{
+   padding-bottom: 1rem !important;
+  }
+  .terms{
+    padding-bottom: 1rem !important;
+  }
+  .site-title{
+    padding-top: 0.5rem;
+    height: 13rem;
+  }
+  h1{
+    font-size:2.2rem;
+  }
+  h2{
+    font-size: 0.9rem !important;
+  }
+  #slogan{
+    font-size: 0.8rem;
+  }
+  #page-slogan{
+    font-size: 1.3rem !important;
+  }
+  .single-blog-post > div{
+    width: 80% !important;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .single-post-image > img{
+    width: 100%;
+  }
+  .single-blog-post{
+    align-items: center !important;
+  }
+  .single-title{
+    height: 9rem;
+  }
+}

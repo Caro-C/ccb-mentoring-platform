@@ -1,0 +1,11 @@
+/* font-family Montserrat*/
+@font-face{
+  font-family: Montserrat;
+  src: url('../fonts/Montserrat-Light.ttf');
+}
+
+/* font-family Herr Von Muellerhoff*/
+@font-face{
+  font-family: HerrVonMuellerhoff;
+  src: url('../fonts/HerrVonMuellerhoff-Regular.ttf');
+}
