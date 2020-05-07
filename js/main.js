@@ -31,7 +31,7 @@ $('.nav-bar a,.home,.move-up').click(function(){
   $('html, body').animate({
     scrollTop: 0
   }, 1000);
-
 });
+
 
 });
