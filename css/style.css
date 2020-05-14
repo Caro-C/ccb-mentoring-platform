@@ -444,6 +444,11 @@ h3{
 .breadcrumb-hover:hover{
   color: var(--text-gold);
 }
+
+.breadcrumb-bottom{
+  text-align: left !important;
+  padding-left: 7.5%;
+}
 /*--------x--------Single-Post-Pages---------x----------*/
 
 /*----------------Contact/Datenschutz/Impressum Pages------------------------*/
