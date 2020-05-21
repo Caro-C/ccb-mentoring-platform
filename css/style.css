@@ -373,6 +373,19 @@ h3{
   width: 100%;
 }
 
+.sidebar-contact{
+  border: thin solid var(--text-light-gray);
+  overflow-wrap: break-word;
+  margin-top: 3.5rem;
+  padding: 1rem 1rem 0.7rem 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.email:hover{
+  color: var(--text-gold);
+}
+
 #favorite-posts{
   text-transform: uppercase;
   text-align: center;
