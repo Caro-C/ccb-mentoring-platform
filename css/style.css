@@ -78,6 +78,25 @@ h3{
   color: #c4941c;
 }
 
+[data-title]:hover:after{
+  opacity: 1;
+  transition: all 0.1s ease 0.3s;
+  visibility: visible;
+}
+
+[data-title]:after{
+  content: attr(data-title);
+  position: absolute;
+  border-style: none;
+  color: var(--text-gold);
+  font-size: 0.7rem;
+  margin-top: 24px;
+  margin-left: -4rem;
+  opacity: 0;
+  z-index: 99999;
+  visibility: hidden;
+}
+
 /* --------x--------- Global Classes ----------x---------*/
 
 /*------------- navigation bar -------------*/
