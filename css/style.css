@@ -233,7 +233,7 @@ h3{
 
 .custom-overlay h2{
   position: relative;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: white;
 }
 
@@ -559,6 +559,7 @@ h3{
   .site-content{
     grid-template-columns: 100%;
   }
+
   .side-bar-posts{
     align-items: center;
     padding-top: 0;
@@ -643,6 +644,7 @@ h3{
     padding-bottom: 0;
     margin-bottom: 0;
   }
+
   .single-blog-post > div{
     width: 78%;
     padding-left: 0;
@@ -721,5 +723,11 @@ h3{
   }
   .single-title{
     height: 9rem;
+  }
+}
+
+
+  .custom-overlay h3{
+    font-size: 0.5rem !important;
   }
 }

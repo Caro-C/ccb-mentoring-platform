@@ -15,12 +15,12 @@ $(document).ready(function(){
             items:1,
             autoplay: false
         },
-        600:{
-            items:1,
+        630:{
+            items:2,
             autoplay: false
         },
-        1000:{
-            items:1,
+        890:{
+            items:3,
             loop:true,
             autoplay: false
         }
