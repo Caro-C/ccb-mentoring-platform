@@ -288,7 +288,7 @@ h3{
 
 .post-header{
   text-align: center;
-  padding-bottom: 2rem;
+  padding-bottom: 1.5rem;
 }
 
 .post-text{
@@ -725,6 +725,6 @@ h3{
     height: 9rem;
   }
   .custom-overlay h3{
-    font-size: 0.5rem !important;
+    font-size: 0.7rem !important;
   }
 }
