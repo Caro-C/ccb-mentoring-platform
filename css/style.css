@@ -286,6 +286,11 @@ h3{
   /*border: thick solid red;*/
 }
 
+.last-post{
+  margin-right: auto;
+  padding-left: 9% !important;
+}
+
 .post-header{
   text-align: center;
   padding-bottom: 1.5rem;
@@ -665,6 +670,10 @@ h3{
 
   .breadcrumb-single-post{
     padding-bottom: 18px;
+  }
+  .last-post{
+    margin-right: unset !important;
+    padding-left: 1.5rem !important;
   }
 }
 
