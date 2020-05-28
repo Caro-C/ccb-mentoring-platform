@@ -301,6 +301,10 @@ h3{
   padding-top: 0.8rem;
 }
 
+.hashtag:hover{
+  color: var(--text-gold) !important;
+}
+
 .level{
   text-align: left;
   font-size: 0.85rem;
