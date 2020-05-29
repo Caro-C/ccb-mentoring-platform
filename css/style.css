@@ -48,13 +48,7 @@ ul{
   margin-bottom: 0 !important;
 }
 
-h2{
-  font-size: 1rem;
-  font-weight: normal;
-  text-transform: uppercase;
-}
-
-h3{
+h1, h3{
   font-size: 0.8rem;
   font-weight: normal;
   color: var(--text-gold);
@@ -64,6 +58,12 @@ h3{
   border-top-color:var(--text-gold);
   display: inline;
   padding: 0.3rem;
+}
+
+h2{
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
 }
 
 .container{
