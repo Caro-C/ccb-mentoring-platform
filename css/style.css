@@ -392,6 +392,10 @@ h3{
   font-size: 0.85rem;
 }
 
+.email:hover{
+  color: var(--text-gold);
+}
+
 #favorite-posts{
   text-transform: uppercase;
   text-align: center;
