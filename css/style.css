@@ -38,7 +38,7 @@ ul{
   list-style-type: none;
 }
 
-h1{
+.logo{
   font-family: var(--Caveat);
   font-style: italic;
   font-size: 3rem;
