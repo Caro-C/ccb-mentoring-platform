@@ -32,6 +32,31 @@
   <link rel="icon" type="image/png" sizes="32x32" href="../assets/favi-32-1.png">
   <link rel="shortcut icon" type="image/png" sizes="16x16" href="../assets/favi.ico">
 
+  <!-- include Cookieconsent by osano (open source on github) -->
+  <link rel="stylesheet" type="text/css" href="../css/cookieconsent.min.css" />
+  <script src="../js/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+      "popup": { "background": "#fff"},
+      "button": { "background": "#DAA520"}
+      },
+      "theme": "classic",
+      "position": "top",
+      "static": "true",
+      "type": "opt-in",
+      "content": {
+      "message": "Um diese Website für dich so interessant wie möglich zu gestalten, kommen Cookies und Google Analytics zum Einsatz. Bist du damit einverstanden?",
+      "deny":"Ablehnen",
+      "allow": "OK, gerne!",
+      "link": "Datenschutzerklärung",
+      "href": "https://coffeecodebreak.de/html/datenschutz.html"
+      }
+    })
+  });
+  </script>
+
 </head>
 
 <body>
