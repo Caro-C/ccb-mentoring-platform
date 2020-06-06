@@ -126,7 +126,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="single-content">
           <div class="single-blog-post">
               <div class="single-post-header">
-                <h1 class="h1-for-post"><a href="#">Die Lösung für mein Cookie-Problem</a></h1><br>
+                <h1 class="h1-for-post"><a href="#">Google Analytics und die Lösung für mein Cookie-Problem</a></h1><br>
                 <div class="date">Juni 2020</div>
               </div>
               <div class="level-and-breadcrumb">
@@ -134,11 +134,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               <div class="breadcrumb breadcrumb-single-post">
                 <a href="../../index.html" class="breadcrumb-hover">Home </a> >
                 <a href="../reads.html" class="breadcrumb-hover">Reads </a> >
-                Die Lösung für mein Cookie-Problem
+                Google Analytics und die Lösung für mein Cookie-Problem
               </div>
             </div>
               <div class="single-post-image">
-                <img src="../../assets/website8.jpg" alt="Code-Editor in Laptop">
+                <img src="../../assets/cookie8.jpg" alt="Caro mit Cookie">
               </div>
               <div class="single-short-text">
                   Um meine Webseite für euch zu verbessern und herauszufinden, welche Artikel mehr und welche weniger
@@ -184,14 +184,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 <h3>1. Cookie-Banner implementieren</h3>
 
-                Du kennst sie sicherlich - die Cookie-Banner, die dir auf so gut wie jeder Webseite angezeigt werden, wenn du diese (zumindest erstmalig) besuchst.<br>
-                Es gibt die verschiedensten Arten von Cookie-Bannern. Manche informieren dich lediglich darüber, dass du dem Setzen von Cookies zustimmst, wenn du weiterhin auf dieser Seite bleibst. Diese Variante ist nicht wirklich fair und auch nicht ganz legal. Du musst nämlich selbst darüber entscheiden können, ob du Cookies zulassen möchtest oder nicht. Und am besten, indem das Ablehnen der Cookies nicht irgendwo versteckt und über fünf Klicks erreichbar ist. Es sollte dir als gleichwertige Option wie das Erlauben der Cookies angeboten werden, damit du aktiv entscheiden kannst, ob du Cookies zulassen möchtest oder nicht. Und zwar ohne, dass “Cookies zulassen” wie bei vielen Seiten schon vorausgewählt ist. Diese Variante wird als “Opt-In” bezeichnet. Da sich die Rechtslage ändern kann und ich, wie gesagt, keine Juristin bin, informiere dich auf jeden Fall immer selbst noch einmal über die aktuellen Vorschriften.<br><br>
+                Du kennst sie sicherlich - die Cookie-Banner, die dir auf so gut wie jeder Webseite angezeigt werden, die du besuchst.<br>
+                Es gibt die verschiedensten Arten von Cookie-Bannern. Manche informieren dich lediglich darüber, dass du dem Setzen von Cookies zustimmst, wenn du weiterhin auf dieser Seite bleibst. Diese Variante ist nicht wirklich fair und auch nicht ganz legal.<br>
+                Du musst nämlich selbst darüber entscheiden können, ob du Cookies zulassen möchtest oder nicht. Und am besten, indem das Ablehnen der Cookies nicht irgendwo versteckt und über fünf Klicks erreichbar ist. Es sollte dir als gleichwertige Option wie das Erlauben der Cookies angeboten werden, damit du aktiv entscheiden kannst, ob du Cookies zulassen möchtest oder nicht. (Und zwar ohne, dass “Cookies zulassen” wie bei vielen Seiten schon vorausgewählt ist.) Diese Variante wird als “Opt-In” bezeichnet. Da sich die Rechtslage ändern kann und ich, wie gesagt, keine Juristin bin, informiere dich auf jeden Fall immer selbst noch einmal über die aktuellen Vorschriften.<br><br>
 
                 Wenn du dir zum Beispiel mein Cookie-Banner anschaust, bietet es dir direkt auf den ersten Blick die beiden Optionen “Ablehnen” und “Okay, gerne” an. Du musst dich aktiv für eine der  beiden Optionen entscheiden. Das Banner kannst du außerdem jederzeit erneut aufrufen und deine Entscheidung ändern. Dazu habe ich oben links über meinem Logo einen kleinen hellgrauen “Cookie Optionen”-Button gesetzt. Wenn du auf diesen klickst, erscheint das Banner erneut.<br><br>
 
-                <em>Ein kleiner Exkurs zum Verständnis: Cookies speichern Daten in deinem Browser. Wenn du beispielsweise in einem Onlineshop unterwegs bist und fleißig Artikel in deinen Warenkorb legst, kann dieser über Cookies gespeichert werden. Cookies können auch zum Tracking eingesetzt werden. Zum Beispiel können sie Informationen dazu speichern, wie lang du auf welchen Seiten warst, nach welchen Begriffen du gesucht hast usw. Das löst natürlich immer wieder breite Diskussionen zum Datenschutz und neue Urteile aus.</em><br><br>
+                <em>Ein kleiner Exkurs zum Verständnis: Cookies speichern Daten in deinem Browser. Wenn du beispielsweise in einem Onlineshop unterwegs bist und Artikel in deinen Warenkorb legst, kann dieser über Cookies gespeichert werden. Cookies können auch zum Tracking eingesetzt werden. Zum Beispiel können sie Informationen dazu speichern, wie lang du auf welchen Seiten warst, nach welchen Begriffen du gesucht hast usw. Das löst natürlich immer wieder breite Diskussionen zum Datenschutz und neue Urteile aus.</em><br><br>
 
-                Da ich den gesamten Cookie-Code nicht selbst schreiben wollte, habe ich nach kostenlosen Lösungen gesucht. Es gibt ein paar Optionen - allerdings bieten diese meist keine optischen Konfigurationsmöglichkeiten für das Cookie-Banner an bzw. nur als kostenpflichtiges Upgrade. Außerdem liegt der eigentliche Code dann meistens dort auf den Servern, was datenschutztechnisch wohl auch umstritten ist.<br><br>
+                Da ich den gesamten Cookie-Code nicht selbst schreiben wollte, habe ich nach kostenlosen Lösungen gesucht, die ich in meinen Code integrieren kann. Es gibt ein paar Optionen - allerdings bieten diese meist keine optischen Konfigurationsmöglichkeiten für das Cookie-Banner an bzw. nur als kostenpflichtiges Upgrade. Außerdem liegt der eigentliche Code dann meistens dort auf den Servern, was datenschutztechnisch wohl auch umstritten ist.<br><br>
 
                 Nach einiger Suche habe ich eine sehr beliebte Open Source Lösung gefunden, die auf Github liegt:
                 <a href="https://github.com/osano/cookieconsent" target="_blank" class="blog-links">CookieConsent von Osano</a>.
@@ -200,7 +201,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 Der CookieConsent-Code lässt sich - wie bei Github beschrieben -  über verschiedene Wege in deinen eigenen Code einbinden. Der Osano Konfigurator bietet dir dazu direkt unter “Copy the Code” einen CSS-Link an, den du in den head deiner HTML-Dateien einbinden kannst. Da ich wollte, dass der Code bei mir liegt, habe ich den benötigten JavaScript- und CSS-Code kopiert und als separate Dateien in meiner Ordnerstruktur abgelegt. Hier findest du den
                 <a href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" target="_blank" class="blog-links">min.js</a> und den <a href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" target="_blank" class="blog-links">min.css</a> Code.<br>
-                Anstatt des CSS-Links von Osano musst du dann jeweils den Ordnerpfad zu den Dateien angeben. Zusammen mit dem restlichen Code aus dem Konfigurator sieht das Ganze bei mir so aus: (ich habe alles, was ich für mein Cookie-Banner benötige, in den head meiner HTML-Dateien gesetzt)<br><br>
+                Anstatt des CSS-Links von Osano musst du dann jeweils den Ordnerpfad zu den Dateien angeben. Zusammen mit dem restlichen Code aus dem Konfigurator sieht das Ganze bei mir so aus: (ich habe alles, was ich für mein Cookie-Banner benötige, in einem Stück in den head meiner HTML-Dateien gesetzt)<br><br>
 
                 <div class="single-post-image">
                   <img src="../../assets/cookieconsent.png" alt="Code für Cookie-Consent">
@@ -222,8 +223,19 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 Bei meiner Recherche hatte ich herausgefunden, dass der Google Tag Manager dazu eine recht komfortable Lösung bietet. Der Google Tag Manager ist eine Art “Vermittler”, der für meine Webseite regeln kann, ob gewisse Tags, wie zum Beispiel Google Analytics, unter bestimmten Bedingungen aktiviert werden sollen oder nicht. Das klang für mich ganz sinnvoll. Deshalb habe ich im nächsten Schritt den Google Tag Manager eingerichtet. Auch hierfür findest du online wieder wirklich gutes Material.<br><br>
 
-                Im Großen und Ganzen habe ich ein Konto und darin einen Container für meine Webseite erstellt und in diesen Container mein Google Analytics Tag gesetzt. Vergiss hier nicht, den Code, den der Google Tag Manager für deinen Container generiert, in den head deiner HTML-Dateien zu setzen. So verbindest du den Tag Manager mit deiner Webseite.<br><br>
-                Da ich ja nicht den Google Analytics Tracking Code benutzt und dort die Anonymisierung deiner IP-Adresse vorgenommen hatte, musste ich das hier noch tun. Dazu kann man im Tag Manager eine Variable anlegen, für die man die Tracking-ID der Webseite eingibt (findest du bei Google Analytics), als Feldname “anonymizeIp” wählt und der Wert auf “true” setzt. Das bedeutet, wenn Google Analytics auf meiner Webseite trackt, welche Blogposts du zum Beispiel angeklickt hast oder wie lang du auf einer Seite warst, werden die letzten acht Stellen deiner IP-Adresse verschlüsselt. So kann ich nicht sehen, welcher Computer genau auf meiner Seite unterwegs war und das ist auch absolut gut so. In Google Analytics sehe ich in meiner Auswertung dann zum Beispiel, dass gestern fünf Leute aus dem Raum München auf meiner Webseite waren und welche Blogposts sie wie lang geöffnet hatten.<br><br>
+                Im Großen und Ganzen habe ich ein Konto und darin einen Container für meine Webseite erstellt und in diesen Container mein Google Analytics Tag gesetzt. Vergiss hier nicht, den Code, den der Google Tag Manager für deinen Container generiert, in den body deiner HTML-Dateien zu setzen. So verbindest du den Tag Manager mit deiner Webseite.<br><br>
+
+                <div class="single-post-image">
+                  <img src="../../assets/gtm-integration.png" alt="Google Tag Manager Code in HTML">
+                </div><br>
+
+                Da ich ja nicht den Google Analytics Tracking Code benutzt und dort die Anonymisierung deiner IP-Adresse vorgenommen hatte, musste ich das hier noch tun. Dazu kann man im Tag Manager eine Variable anlegen, für die man die Tracking-ID der Webseite eingibt (findest du bei Google Analytics), als Feldname “anonymizeIp” wählt und den Wert auf “true” setzt. Das sieht dann so aus:<br><br>
+
+                <div class="single-post-image">
+                  <img src="../../assets/googletagmanager1.png" alt="anonymizeIp in Google Tag Manager">
+                </div><br>
+
+                Das bedeutet, wenn Google Analytics auf meiner Webseite trackt, welche Blogposts du zum Beispiel angeklickt hast oder wie lang du auf einer Seite warst, werden die letzten acht Stellen deiner IP-Adresse verschlüsselt. So lässt sich nicht mehr nachvollziehen, welcher Computer genau auf meiner Seite unterwegs war und das ist auch absolut gut so. In Google Analytics sehe ich in meiner Auswertung dann zum Beispiel, dass gestern fünf Leute (oder genauer gesagt Geräte) aus dem Raum München auf meiner Webseite waren und welche Blogposts sie wie lang geöffnet hatten.<br><br>
 
                 Nun hatte ich es fast geschafft. Mir fehlte nur noch die Verbindung zwischen meinem Cookie-Banner und dem Google Tag Manager. Und wie ich die hergestellt habe, erkläre ich dir noch kurz im nächsten Abschnitt.<br><br>
 
@@ -231,7 +243,17 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 Wenn du in meinem Cookie-Banner auf “Ablehnen” oder “Okay, gerne” klickst, wird der Status von dem CookieConsent-Code-Schnipsel, der überprüft, wie du dich entschieden hast (“cookieconsent_status”) auf <em>allow</em> oder <em>deny</em> gesetzt. Und genau diese Information benötigt mein Google Tag Manager, um Google Analytics zu sagen, dass es starten darf oder nicht.<br><br>
 
-                Damit der Google Tag Manager die nötigen Informationen erhält und verarbeiten kann, habe ich für meinen CoffeeCodeBreak-Container eine Variable des Typs <em>First-Party-Cookie</em> erstellt und in dieser den Namen des “Überprüfungs-Code-Schnipsels” hinterlegt (also “cookieconsent_status”).<br> Um dann noch sicherzustellen, dass mein Google Tag Manager das Tracking über Google Analytics nur zulässt, wenn der Status “allow” lautet, habe ich im Tag Manager einen Trigger erstellt. Diesem Trigger habe ich den Typ “Seitenaufruf” gegeben und festgelegt, dass Google Analytics nur dann ausgelöst werden darf, wenn meine CookieConsent-Variable den Wert “allow” enthält. (Also nur für <em>einige Seitenaufrufe</em> und nicht für alle.)<br><br>
+                Damit der Google Tag Manager die nötigen Informationen erhält und verarbeiten kann, habe ich dort für meinen CoffeeCodeBreak-Container eine Variable des Typs <em>First-Party-Cookie</em> erstellt und in dieser den Namen des “Überprüfungs-Code-Schnipsels” hinterlegt (also “cookieconsent_status”).<br><br>
+
+                <div class="single-post-image">
+                  <img src="../../assets/googletagmanager2.png" alt="Variablen-Konfiguration in Google Tag Manager">
+                </div><br>
+
+                Um dann noch sicherzustellen, dass mein Google Tag Manager das Tracking über Google Analytics nur zulässt, wenn der Status “allow” lautet, habe ich im Tag Manager einen Trigger erstellt. Diesem Trigger habe ich den Typ “Seitenaufruf” gegeben und festgelegt, dass Google Analytics nur dann ausgelöst werden darf, wenn meine CookieConsent-Variable den Wert “allow” enthält. Hier noch ein Bild zur Konfiguration:<br><br>
+
+                <div class="single-post-image">
+                  <img src="../../assets/googletagmanager3.png" alt="Trigger-Konfiguration in Google Tag Manager">
+                </div><br>
 
                 Und damit war es geschafft! Wenn du jetzt auf meine Seite gehst und in meinem Cookie-Banner “Ablehnen” anklickst, erhält mein Google Tag Manager die Information, dass Google Analytics nicht aktiviert werden darf. Wenn du “Okay, gerne” anklickst, erhält der Tag Manager die Information, dass du das Tracking erlaubst und Google Analytics wird gestartet.<br>
                 Und das hilft mir wiederum dabei, zu sehen, welche Artikel wie häufig angeklickt wurden, wie viel Zeit mit den einzelnen Artikeln verbracht wurde usw. Das heißt, ich kann mehr Artikel schreiben, die euch interessieren könnten und weniger, die euch eventuell nicht so gut gefallen. Und außerdem freue ich mich natürlich riesig, wenn ich sehe, dass jemand meine Webseite besucht hat! :)<br><br>
@@ -240,7 +262,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 Um sicherzugehen, dass meine Einstellungen auch funktionieren, habe ich das Ganze noch getestet. Der Google Tag Manager bietet die Option, eine Vorschau anzusehen. Wenn du im Vorschaumodus deine Seite öffnest, kannst du direkt sehen, welche Tags aktiv sind und welche nicht. Ich habe meine Cookies abwechselnd abgelehnt und wieder zugelassen und dazwischen auf der Seite herum geklickt, um zu überprüfen, ob Google Analytics immer dann aktiv oder nicht aktiv war, wenn ich es wollte. Und das hat zum Glück einwandfrei funktioniert! :)<br><br>
 
-                Vielleicht bist du in einer ähnlichen Situation und ich konnte dir mit diesem Post ein wenig helfen. Und wenn nicht, hoffe ich, dass du - auch wenn es dieses Mal recht spezifisch und nicht ganz einfach war - das Wichtigste verstanden und etwas dazugelernt hast!<br><br>
+                Vielleicht bist du in einer ähnlichen Situation und ich konnte dir mit diesem Post ein wenig weiterhelfen. Und wenn nicht, hoffe ich, dass du - auch wenn es dieses Mal recht spezifisch und nicht ganz einfach war - das Wichtigste verstanden und etwas dazugelernt hast!<br><br>
 
                 Bis zum nächsten Mal!<br><br>
 
