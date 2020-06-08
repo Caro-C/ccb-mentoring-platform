@@ -71,6 +71,11 @@ h2{
   border-top-style: none;
 }
 
+.h2-for-post{
+  font-weight: bold;
+  text-transform: none;
+}
+
 .container{
   margin: 0.5vh;
 }
@@ -81,6 +86,10 @@ h2{
 
 .blog-links:hover{
   text-decoration: underline;
+}
+
+.werbung{
+  color: var(--text-light-gray);
 }
 
 [data-title]:hover:after{
