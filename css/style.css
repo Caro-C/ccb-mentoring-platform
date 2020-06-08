@@ -80,7 +80,7 @@ h2{
 }
 
 .blog-links:hover{
-  color: #c4941c;
+  text-decoration: underline;
 }
 
 [data-title]:hover:after{
@@ -348,6 +348,10 @@ h2{
   color: var(--text-gold);
 }
 
+.read-more a:hover{
+  text-decoration: underline;
+}
+
 .side-bar-posts{
   display: flex;
   flex-direction: column;
@@ -361,6 +365,10 @@ h2{
   padding-top: 1.9rem;
   text-align: center;
   /*border: thick solid red;*/
+}
+
+.side-bar-topic:hover{
+  text-decoration: underline;
 }
 
 #about-me{
