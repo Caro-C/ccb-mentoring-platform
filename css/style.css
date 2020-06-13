@@ -489,6 +489,11 @@ h2{
 .fa-bookmark{
   color: var(--text-gold);
 }
+
+.side-bar-img{
+  width: 100%;
+  position: center;
+}
 /*-----x-------Site Content---------x----------*/
 
 /*------x----- Main Content ------x----------*/
