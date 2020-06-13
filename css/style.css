@@ -600,6 +600,26 @@ h2{
 .breadcrumb-hover:hover{
   color: var(--text-gold);
 }
+
+.comments{
+  font-size: 0.85rem;
+  padding: 5% 7.5% 5% 7.5%;
+}
+
+input[type=button], input[type=submit], input[type=reset]{
+  background-color: #f2f4f7;
+  border: none;
+  padding: 10px;
+  margin: 5px;
+  cursor: pointer;
+  font-family: var(--Montserrat);
+  border-radius: 3px;
+}
+
+input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
+  color: var(--text-gold);
+}
+
 /*--------x--------Single-Post-Pages---------x----------*/
 
 /*----------------Contact/Datenschutz/Impressum Pages------------------------*/
