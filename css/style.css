@@ -206,6 +206,57 @@ h2{
 }
 /*-------x------ navigation bar ------x-------*/
 
+/*---------------Language-Dropdown--------------*/
+/* Style The Dropdown Button */
+.dropbtn {
+  font-family: var(--Montserrat);
+  background-color: white;
+  color: var(--text-gray);
+  padding: 5px;
+  font-size: 0.85rem;
+  border: none;
+  cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+  display: none;
+  font-size: 0.85rem;
+  background-color: #f2f4f7;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 5px 12px;
+  display: block;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content{
+  position: fixed;
+  z-index: 1;
+  display: block;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+  color: var(--text-gold);
+}
+
+/* Change color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+  color: var(--text-gold);
+}
+/*---------------Language-Dropdown--------------*/
+
 /*----------- Main Content ----------------*/
 
 /*----------- Site Title ----------------*/
@@ -432,7 +483,11 @@ h2{
   font-size: 0.8rem;
   font-weight: normal;
   text-transform: uppercase;
-  text-align: center;
+  text-align: left;
+}
+
+.fa-bookmark{
+  color: var(--text-gold);
 }
 /*-----x-------Site Content---------x----------*/
 
@@ -657,6 +712,11 @@ h2{
   }
   .single-title{
     height: 8rem;
+  }
+  /*---make language dropdown show up when hovering---*/
+  .dropdown:hover .dropdown-content{
+    position: relative;
+    display: block;
   }
 }
 
