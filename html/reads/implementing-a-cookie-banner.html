@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Um meine Webseite für euch zu verbessern, habe ich Google Analytics aufgesetzt. Für das Tracking benötige ich aber deine Einwilligung und dafür benötige ich ein Cookie-Banner. Hier kannst du nachlesen, wie ich das umgesetzt habe. ">
+  <title>Cookie-Banner ohne WordPress implementieren</title>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-53XZFM5');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- stylesheet from font awesome -->
+  <link rel="stylesheet" href="../../css/all.css">
+
+  <!-- include google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+  <!-- custom style -->
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <!-- include favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favi-180-1.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favi-32-1.png">
+  <link rel="shortcut icon" type="image/png" sizes="16x16" href="../../assets/favi.ico">
+
+  <!-- include Cookieconsent by osano (open source on github) -->
+  <link rel="stylesheet" type="text/css" href="../../css/cookieconsent.min.css" />
+  <script src="../../js/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+      "popup": { "background": "#f2f4f7"},
+      "button": { "background": "#DAA520"}
+      },
+      "theme": "classic",
+      "position": "top",
+      "static": "true",
+      "type": "opt-in",
+      "content": {
+      "message": "Um diese Website für dich so interessant wie möglich zu gestalten, kommen Cookies und Google Analytics zum Einsatz. Bist du damit einverstanden? (Du kannst deine Entscheidung jederzeit ändern.)",
+      "deny":"Ablehnen",
+      "allow": "OK, gerne!",
+      "link": "Datenschutzerklärung",
+      "href": "https://coffeecodebreak.de/html/datenschutz.html"
+      }
+    })
+  });
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53XZFM5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <!-- Navigation -->
+ <section>
+  <nav class="nav-bar">
+    <div class="nav-menue flex-row">
+      <div class="nav-brand">
+        <a href="../../index.html" class="text-gray"  style="color:#DAA520;">CoffeeCodeBreak</a> <!-- href="#"scrolls to top -->
+      </div>
+      <div>
+        <div class="toggle-collapse">
+          <div class="toggle-icon">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+      <div>
+        <ul class="nav-items">
+          <li class="nav-link home">
+            <a href="../../index.html">Home</a>
+          </li>
+          <li class="nav-link page-gold">
+            <a href="../reads.html">Tech-Reads</a>
+          </li>
+          <li class="nav-link">
+            <a href="../inspiration.html">Inspiration</a>
+          </li>
+          <li class="nav-link">
+            <a href="../career.html">Career</a>
+          </li>
+          <li class="nav-link">
+            <a href="../about.html">About</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        <a href="https://github.com/Caro-C" target="_blank" data-title="Github"><i class="fab fa-github"></i></a>&nbsp &nbsp
+        <a href="https://www.linkedin.com/in/carolyn-covic-a22461ba/" target="_blank" data-title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+  </nav>
+  </section>
+
+  <!-- End of Navigation -->
+
+  <!-- Start of Main Site Section -->
+  <main>
+    <!-- Start of Site Title -->
+    <section class="site-title page-title single-title">
+      <div>
+        <div class="logo"><a href='../../index.html'>CoffeeCodeBreak</a></div>
+        <div class="date">Tech blog to inspire</div>
+      </div>
+    </section>
+    <!-- End of Site Title -->
+
+    <!-- Start of Site Content -->
+    <section class="container">
+      <div class="single-content">
+          <div class="single-blog-post">
+              <div class="single-post-header">
+                <h1 class="h1-for-post"><a href="#">Google Analytics und die Lösung für mein Cookie-Banner</a></h1><br>
+                <div class="date">Juni 2020</div>
+              </div>
+              <div class="level-and-breadcrumb">
+              <div class="level level-single-post">Level &nbsp &nbsp<div class="circle" style="background-color:#DAA520;"></div> <div class="circle" style="background-color:#DAA520;"></div> <div class="circle"></div>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</div>
+              <div class="breadcrumb breadcrumb-single-post">
+                <a href="../../index.html" class="breadcrumb-hover">Home </a> >
+                <a href="../reads.html" class="breadcrumb-hover">Reads </a> >
+                Google Analytics und die Lösung für mein Cookie-Banner
+              </div>
+            </div>
+              <div class="single-post-image">
+                <img src="../../assets/cookie8.jpg" alt="Caro mit Cookie">
+              </div>
+              <div class="single-short-text">
+                  Um meine Webseite für euch zu verbessern und herauszufinden, welche Artikel mehr und welche weniger
+                  beliebt sind, dachte ich mir, es sei eine gute Idee, Google Analytics aufzusetzen.
+                  Dieses Vorhaben hat sich allerdings als unerwartet aufwändig entpuppt,
+                  weil ich natürlich nicht einfach so in der Gegend herum analysieren darf.
+                  Und so war ich plötzlich ganz tief in der Cookie-Welt versunken.
+              </div>
+              <div class="single-post-text">
+                In diesem Post werde ich dir erzählen, wie ich zu meinem wunderschönen Cookie-Banner kam und wie deine Cookie-Entscheidung dafür sorgt, dass Google Analytics loslegen darf oder nicht.
+                Viel Spaß damit! :)<br><br>
+
+                <h2 class="h2-for-post">Weshalb es mit Google Analytics nicht getan ist</h2>
+
+                Google Analytics ist ein ziemlich mächtiges Analyseinstrument von Google, mit dem du den Datenverkehr auf deinen Webseiten tracken und analysieren kannst. Ich dachte mir "super, so kann ich sehen, ob meine Blogposts gelesen werden und welche mehr oder weniger beliebt sind". Deshalb hatte ich beschlossen, Google Analytics aufzusetzen. Und das Einrichten an sich ist wirklich kein Problem. Dazu finden sich online mehr als genügend gute Anleitungen und Tutorials.<br><br>
+
+                Doch leider ist es damit nicht getan. Denn ohne deine Einwilligung darf ich überhaupt nicht auswerten, was du so auf meiner Seite getrieben hast. Insbesondere in Deutschland gibt es ganz schön viel bzgl. Datenschutz zu beachten. Und das nicht nur, wenn man Google Analytics einsetzt, sondern allgemein wenn man eine Webseite betreibt.<br><br>
+
+                Da meine Seite ganz neu ist und für Suchmaschinen (und damit höchstwahrscheinlich auch für dich) bis vor einigen Tagen noch nicht einmal existierte, hatte ich mir bisher kaum Gedanken über diese Themen gemacht. Irgendwann muss aber jeder dafür sorgen, auf der sicheren Seite zu sein. Und das Einrichten von Google Analytics war für mich ein (zwingender) Trigger, mich damit zu beschäftigen.<br><br>
+
+                Ich stand also vor zwei Herausforderungen: zum einen musste ich herausfinden, was ich überhaupt benötige und beachten muss und zum anderen musste eine technische Lösung dafür her. Ich bin natürlich keine Juristin und wenn du detaillierte Informationen benötigst, solltest du dich immer an einen Experten wenden. Das ist auch definitiv kein Artikel über alle rechtlichen Aspekte, die du beachten musst, wenn du eine Webseite betreibst. Dafür gibt es viel zu viele verschiedene Fälle und Arten von Webseiten.<br><br>
+
+                Was aber sicher ist: um dein Verhalten auf meiner Webseite mit Google Analytics auszuwerten benötige ich deine Erlaubnis. Diese Erlaubnis muss ich mir einholen, wenn du meine Webseite in deinem Browser aufrufst. Und zwar über ein Cookie-Banner (“Cookie Consent”). Außerdem muss ich dir natürlich auch die Möglichkeit geben, das Ganze abzulehnen.<br><br>
+
+                Naiverweise hatte ich angenommen, dass sei eine Sache, die sich in zwei Stunden erledigen lässt. Und insbesondere was die technische Seite betrifft, hatte ich erwartet, dass es - wie für fast alles andere auch - schnelle, einfache Lösungen und genügend Tutorials gibt. Schlussendlich musste ich mir aber mühsam die einzelnen Puzzleteile zusammensuchen. Deshalb möchte ich mit dir teilen, was am Ende meine Lösung für das Problem war. Das ist sicherlich nicht die einzige Lösung, aber eine, die für mich am Ende super funktioniert hat. Was genau du für deine Webseite benötigst, hängt wieder ganz von deiner Situation ab.<br><br>
+
+                Kurz zu meiner Situation: ich habe meine Seite selbst programmiert und kein Content Management System wie WordPress oder andere Vorlagen verwendet. Das liegt daran, dass ich meine Webseite zum Programmieren üben und Technologien ausprobieren benutze. Wenn du deine Webseite über WordPress etc. verwaltest, gibt es natürlich Plugins, mit denen sich das Thema Cookies viel einfacher erledigen lässt. In meinem Fall musste ich aber eine Lösung für meinen rohen Code finden.<br><br>
+
+                <h2 class="h2-for-post">Mein Cookie-Plan</h2>
+
+                Nach unzähligen Artikeln, Anleitungen und Youtube-Videos hatte ich mir schließlich einen Plan erstellt:
+                <ol>
+                <li>Cookie-Banner implementieren
+                <li>Google Analytics einrichten
+                <li>Google Tag Manager einrichten (und Google Analytics als Tag einbinden)
+                <li>Cookie-Banner mit Google Tag Manager verbinden
+                <li>Testen, ob es funktioniert
+                </ol>
+
+                Im Rest dieses Blogposts findest du meine Key-Findings zu den einzelnen Punkten. Da für mich das Thema Cookie-Banner am aufwändigsten war (eigentlich geht aber auch das recht einfach, wenn man einmal weiß, was man tun muss), gehe ich darauf etwas genauer ein. Zu den anderen Punkten erzähle ich dir das, was mir selbst für mein Gesamtverständnis geholfen hat. Außerdem habe ich die Dinge festgehalten, die ich auf keinen Fall vergessen möchte und das nächste Mal wieder mühsam zusammensuchen müsste. Zu allem anderen findest du problemlos mehr Infos und Details im Internet. Natürlich kannst du mir auch jederzeit schreiben, wenn du Fragen hast.<br><br>
+
+                Los geht’s! :)<br><br>
+
+                <h2 class="h2-for-post">1. Cookie-Banner implementieren</h2>
+
+                Du kennst sie sicherlich - die Cookie-Banner, die dir auf so gut wie jeder Webseite angezeigt werden, die du besuchst.<br>
+                Es gibt die verschiedensten Arten von Cookie-Bannern. Manche informieren dich lediglich darüber, dass du dem Setzen von Cookies zustimmst, wenn du weiterhin auf dieser Seite bleibst. Diese Variante ist nicht wirklich fair und auch nicht ganz legal.<br>
+                Du musst nämlich selbst darüber entscheiden können, ob du Cookies zulassen möchtest oder nicht. Und am besten, indem das Ablehnen der Cookies nicht irgendwo versteckt und über fünf Klicks erreichbar ist. Es sollte dir als gleichwertige Option wie das Erlauben der Cookies angeboten werden, damit du aktiv entscheiden kannst, ob du Cookies zulassen möchtest oder nicht. (Und zwar ohne, dass “Cookies zulassen” wie bei vielen Seiten schon vorausgewählt ist.) Diese Variante wird als “Opt-In” bezeichnet. Da sich die Rechtslage ändern kann und ich, wie gesagt, keine Juristin bin, informiere dich auf jeden Fall immer selbst noch einmal über die aktuellen Vorschriften.<br><br>
+
+                Wenn du dir zum Beispiel mein Cookie-Banner anschaust, bietet es dir direkt auf den ersten Blick die beiden Optionen “Ablehnen” und “Okay, gerne” an. Du musst dich aktiv für eine der  beiden Optionen entscheiden. Das Banner kannst du außerdem jederzeit erneut aufrufen und deine Entscheidung ändern. Dazu habe ich oben links über meinem Logo einen kleinen hellgrauen “Cookie Optionen”-Button gesetzt. Wenn du auf diesen klickst, erscheint das Banner erneut.<br><br>
+
+                <em>Ein kleiner Exkurs zum Verständnis: Cookies speichern Daten in deinem Browser. Wenn du beispielsweise in einem Onlineshop unterwegs bist und Artikel in deinen Warenkorb legst, kann dieser über Cookies gespeichert werden. Cookies können auch zum Tracking eingesetzt werden. Zum Beispiel können sie Informationen dazu speichern, wie lang du auf welchen Seiten warst, nach welchen Begriffen du gesucht hast usw. Das löst natürlich immer wieder breite Diskussionen zum Datenschutz und neue Urteile aus.</em><br><br>
+
+                Da ich den gesamten Cookie-Code nicht selbst schreiben wollte, habe ich nach kostenlosen Lösungen gesucht, die ich in meinen Code integrieren kann. Es gibt ein paar Optionen - allerdings bieten diese meist keine optischen Konfigurationsmöglichkeiten für das Cookie-Banner an bzw. nur als kostenpflichtiges Upgrade. Außerdem liegt der eigentliche Code dann meistens dort auf den Servern, was datenschutztechnisch wohl auch umstritten ist.<br><br>
+
+                Nach einiger Suche habe ich eine sehr beliebte Open Source Lösung gefunden, die auf Github liegt:
+                <a href="https://github.com/osano/cookieconsent" target="_blank" class="blog-links">CookieConsent von Osano</a>.
+                Auf der
+                <a href="https://www.osano.com/cookieconsent/download/" target="_blank" class="blog-links">Osano-Webseite</a> gibt es sogar einen Konfigurator für dein Cookie-Banner, der für dich den gewünschten Code generiert, den du dann in deine HTML-Dateien einfügst. So musst du nicht in dem Code von CookieConsent herumspielen. (Der Konfigurator öffnet sich, wenn du auf “Start Coding” klickst.) Wähle hier bei “Compliance Type” die “Ask users to opt INTO cookies”-Variante, um ein Opt-In-Banner zu erstellen.<br><br>
+
+                Der CookieConsent-Code lässt sich - wie bei Github beschrieben -  über verschiedene Wege in deinen eigenen Code einbinden. Der Osano Konfigurator bietet dir dazu direkt unter “Copy the Code” einen CSS-Link an, den du in den head deiner HTML-Dateien einbinden kannst. Da ich wollte, dass der Code bei mir liegt, habe ich den benötigten JavaScript- und CSS-Code kopiert und als separate Dateien in meiner Ordnerstruktur abgelegt. Hier findest du den
+                <a href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" target="_blank" class="blog-links">min.js</a> und den <a href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" target="_blank" class="blog-links">min.css</a> Code.<br>
+                Anstatt des CSS-Links von Osano musst du dann jeweils den Ordnerpfad zu den Dateien angeben. Zusammen mit dem restlichen Code aus dem Konfigurator sieht das Ganze bei mir so aus: (ich habe alles, was ich für mein Cookie-Banner benötige, in einem Stück in den head meiner HTML-Dateien gesetzt)<br><br>
+
+                <div class="single-post-image">
+                  <img src="../../assets/cookieconsent.PNG" alt="Code für Cookie-Consent">
+                </div><br>
+
+                Übrigens: in der min.css-Datei findest du unter anderem das Styling für den <em>revoke-Button</em> (die Klasse heißt “cc-revoke”). Das ist der Button, der bei mir oben links über dem Logo sitzt und über den du das Cookie-Banner jederzeit erneut aufrufen kannst. Wenn du dich mit CSS etwas auskennst, kannst du diesen in min.css optisch anpassen.<br><br>
+
+                <h2 class="h2-for-post">2. Google Analytics einrichten</h2>
+
+                Nachdem ich es endlich geschafft hatte, ein Cookie-Banner nach meinen Vorstellungen in meine Webseite einzubauen, musste ich dafür sorgen, dass es auch funktioniert. Der ganze Berg Arbeit hatte ja damit begonnen, dass ich Google Analytics einsetzen wollte. Also war der nächste Schritt, Google Analytics aufzusetzen.<br><br>
+                Wie ich es oben bereits erwähnt habe, ist das recht einfach. Grob gesagt: du gehst auf analytics.google.com, meldest dich über deinen Google-Account an (oder erstellst einen neuen, solltest du noch keinen haben), erstellst ein Analytics-Konto und für deine Webseite ein neues “Property”. Dazu gibt es wirklich tolle Youtube-Tutorials mit vielen sinnvollen Tipps und Hinweisen.<br><br>
+
+                Google Analytics bietet dir einen Tracking-Code an, den du in deine HTML-Dateien einbinden kannst. Ein wichtiger Hinweis hierzu: falls du das machst, musst du unbedingt eine IP-Anonymisierung vornehmen, indem du ein <em>anonymizeIp</em> in den Code einbaust! Auch dazu gibt es viele Anleitungen.<br>
+                Wenn du den Google Tag Manager benutzt, musst du den Tracking Code nicht direkt verwenden. Da ich den Tracking-Code von Google-Analytics nicht in meinen Code einbinden, sondern stattdessen den Tag Manager benutzen wollte, war ich mit dem Erstellen meiner Webseite als Property hier erst einmal fertig.<br><br>
+
+                <h2 class="h2-for-post">3. Google Tag Manager einrichten</h2>
+
+                Zusammenfassend hatte ich bis dahin ein Cookie-Banner und ein Konto mit meiner Webseite als Property in Google-Analytics. Das alleine würde mir aber wenig dabei helfen, auf Basis der Entscheidung meiner Seitenbesucher Cookies bzw. Google Analytics zu aktivieren oder nicht. Ich musste es also irgendwie schaffen, Google Analytics mitzuteilen, dass es loslegen soll oder nicht - je nachdem, ob du auf meinem Cookie-Banner “Ablehnen” oder “Okay, gerne” angeklickt hast.<br><br>
+
+                Bei meiner Recherche hatte ich herausgefunden, dass der Google Tag Manager dazu eine recht komfortable Lösung bietet. Der Google Tag Manager ist eine Art “Vermittler”, der für meine Webseite regeln kann, ob gewisse Tags, wie zum Beispiel Google Analytics, unter bestimmten Bedingungen aktiviert werden sollen oder nicht. Das klang für mich ganz sinnvoll. Deshalb habe ich im nächsten Schritt den Google Tag Manager eingerichtet. Auch hierfür findest du online wieder wirklich gutes Material.<br><br>
+
+                Im Großen und Ganzen habe ich ein Konto und darin einen Container für meine Webseite erstellt und in diesen Container mein Google Analytics Tag gesetzt. Vergiss hier nicht, den Code, den der Google Tag Manager für deinen Container generiert, in den body deiner HTML-Dateien zu setzen. So verbindest du den Tag Manager mit deiner Webseite.<br><br>
+
+                <div class="single-post-image">
+                  <img src="../../assets/gtm-integration.png" alt="Google Tag Manager Code in HTML">
+                </div><br>
+
+                Da ich ja nicht den Google Analytics Tracking Code benutzt und dort die Anonymisierung deiner IP-Adresse vorgenommen hatte, musste ich das hier noch tun. Dazu kann man im Tag Manager eine Variable anlegen, für die man die Tracking-ID der Webseite eingibt (findest du bei Google Analytics), als Feldname “anonymizeIp” wählt und den Wert auf “true” setzt. Das sieht dann so aus:<br><br>
+
+                <div class="single-post-image">
+                  <img src="../../assets/googletagmanager1.png" alt="anonymizeIp in Google Tag Manager">
+                </div><br>
+
+                Das bedeutet, wenn Google Analytics auf meiner Webseite trackt, welche Blogposts du zum Beispiel angeklickt hast oder wie lang du auf einer Seite warst, werden die letzten acht Stellen deiner IP-Adresse verschlüsselt. So lässt sich nicht mehr nachvollziehen, welcher Computer genau auf meiner Seite unterwegs war und das ist auch absolut gut so. In Google Analytics sehe ich in meiner Auswertung dann zum Beispiel, dass gestern fünf Leute (oder genauer gesagt Geräte) aus dem Raum München auf meiner Webseite waren und welche Blogposts sie wie lang geöffnet hatten.<br><br>
+
+                Nun hatte ich es fast geschafft. Mir fehlte nur noch die Verbindung zwischen meinem Cookie-Banner und dem Google Tag Manager. Und wie ich die hergestellt habe, erkläre ich dir noch kurz im nächsten Abschnitt.<br><br>
+
+                 <h2 class="h2-for-post">4. Cookie-Banner mit Google Tag Manager verbinden</h2>
+
+                Wenn du in meinem Cookie-Banner auf “Ablehnen” oder “Okay, gerne” klickst, wird der Status von dem CookieConsent-Code-Schnipsel, der überprüft, wie du dich entschieden hast (“cookieconsent_status”) auf <em>allow</em> oder <em>deny</em> gesetzt. Und genau diese Information benötigt mein Google Tag Manager, um Google Analytics zu sagen, dass es starten darf oder nicht.<br><br>
+
+                Damit der Google Tag Manager die nötigen Informationen erhält und verarbeiten kann, habe ich dort für meinen CoffeeCodeBreak-Container eine Variable des Typs <em>First-Party-Cookie</em> erstellt und in dieser den Namen des “Überprüfungs-Code-Schnipsels” hinterlegt (also “cookieconsent_status”).<br><br>
+
+                <div class="single-post-image">
+                  <img src="../../assets/googletagmanager2.png" alt="Variablen-Konfiguration in Google Tag Manager">
+                </div><br>
+
+                Um dann noch sicherzustellen, dass mein Google Tag Manager das Tracking über Google Analytics nur zulässt, wenn der Status “allow” lautet, habe ich im Tag Manager einen Trigger erstellt. Diesem Trigger habe ich den Typ “Seitenaufruf” gegeben und festgelegt, dass Google Analytics nur dann ausgelöst werden darf, wenn meine CookieConsent-Variable den Wert “allow” enthält. Hier noch ein Bild zur Konfiguration:<br><br>
+
+                <div class="single-post-image">
+                  <img src="../../assets/googletagmanager3.png" alt="Trigger-Konfiguration in Google Tag Manager">
+                </div><br>
+
+                Und damit war es geschafft! Wenn du jetzt auf meine Seite gehst und in meinem Cookie-Banner “Ablehnen” anklickst, erhält mein Google Tag Manager die Information, dass Google Analytics nicht aktiviert werden darf. Wenn du “Okay, gerne” anklickst, erhält der Tag Manager die Information, dass du das Tracking erlaubst und Google Analytics wird gestartet.<br>
+                Und das hilft mir wiederum dabei, zu sehen, welche Artikel wie häufig angeklickt wurden, wie viel Zeit mit den einzelnen Artikeln verbracht wurde usw. Das heißt, ich kann mehr Artikel schreiben, die euch interessieren könnten und weniger, die euch eventuell nicht so gut gefallen. Und außerdem freue ich mich natürlich riesig, wenn ich sehe, dass jemand meine Webseite besucht hat! :)<br><br>
+
+                <h2 class="h2-for-post">5. Testen, ob es funktioniert</h2>
+
+                Um sicherzugehen, dass meine Einstellungen auch funktionieren, habe ich das Ganze noch getestet. Der Google Tag Manager bietet die Option, eine Vorschau anzusehen. Wenn du im Vorschaumodus deine Seite öffnest, kannst du direkt sehen, welche Tags aktiv sind und welche nicht. Ich habe meine Cookies abwechselnd abgelehnt und wieder zugelassen und dazwischen auf der Seite herum geklickt, um zu überprüfen, ob Google Analytics immer dann aktiv oder nicht aktiv war, wenn ich es wollte. Und das hat zum Glück einwandfrei funktioniert! :)<br><br>
+
+                Vielleicht bist du in einer ähnlichen Situation und ich konnte dir mit diesem Post ein wenig weiterhelfen. Und wenn nicht, hoffe ich, dass du - auch wenn es dieses Mal recht spezifisch und nicht ganz einfach war - das Wichtigste verstanden und etwas dazugelernt hast!<br><br>
+
+                Bis zum nächsten Mal!<br><br>
+
+                Deine Caro
+
+
+              </div>
+              <div class="breadcrumb">
+                <a href="../reads.html" class="breadcrumb-hover"><u>zurück zu Reads</u></a> >
+              </div><br>
+
+              <div class="comments">
+                <h2 class="h2-for-post">Schreibe einen Kommentar</h2>
+                Ich freue mich, wenn du mir einen Kommentar hinterlässt. Deine E-Mail-Adresse wird nicht veröffentlicht. Die mit * gekennzeichneten Felder müssen ausgefüllt werden, um den Kommentar zu versenden. Bis dein Kommentar veröffentlicht wird, kann es einige Stunden dauern.<br><br>
+                <form action="mailto:coffeecodebreak@gmail.com" method="post" enctype="text/plain">
+                  Kommentar<br> <textarea name="Comment" rows="10" cols="40"></textarea><br><br>
+                  Name* (wie er angezeigt werden soll)<br> <input name="Name" size="40"><br>
+                  Email*<br> <input name="Email" size="40"><br>
+                  Website<br> <input name="Website" size="40"><br><br>
+
+                  <input type="submit" value="Senden">
+                  <input type="reset" value="Abbrechen">
+
+                </form>
+              </div>
+
+            </div>
+
+
+        <!-- Start of Side-Bar -->
+        <aside class="side-bar side-bar-posts page-side-bar">
+            <div class="side-bar-post-x">
+              <div id="about-me">About me </div>
+              <div id="intro">Hi, ich bin Caro und ich schreibe über meinen Weg
+                 in die Welt der Softwareentwicklung.<br>
+                 Ich möchte meine Erfahrungen mit dir teilen und dir die Tür
+                 zu dieser Welt öffnen. Mein Ziel ist es, dich mit kleinen
+                 Tech-Stories zu inspirieren und neugierig zu machen.<br>
+                 Hol dir einen Kaffee und bereichere deine Pause mit einem kleinen Stück neuem Wissen :)<br>
+                 <span class="read-more"><a href="../about.html">> Read more</a></span>
+              </div>
+              <div class="profile-pic">
+                <img src="../../assets/profile.jpg" id="profile-pic" alt="profile picture">
+              </div>
+
+              <div class="sidebar-contact">
+                Hast du Fragen, Anregungen oder Feedback?<br>
+                Ich freue mich, wenn du mir schreibst!<br>
+                <a href="mailto: coffeecodebreak@gmail.com" class="email"><i class="far fa-envelope"></i></a>&nbsp &nbsp
+                <a href="https://www.linkedin.com/in/carolyn-covic-a22461ba/" target="_blank" class="email"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+
+            </div>
+
+            <div class="side-bar-post-x">
+              <div id="favorite-posts">Favorite Posts </div>
+
+              <hr><br>
+              <div class="side-bar-collection">
+                <a href="../reads/wie-kommt-der-blog-ins-internet.html"><img src="../../assets/internet8.jpg" class="side-bar-img" alt=""></a><br>
+                <i class="far fa-bookmark"></i>&nbsp
+                <a href="../reads/wie-kommt-der-blog-ins-internet.html" class="side-bar-topic">Und wie kommt der Blog jetzt ins Internet?</a>
+              </div><br>
+
+              <div class="side-bar-collection">
+                <a href="../reads/wie-baut-man-so-einen-blog.html"><img src="../../assets/blog8.jpg" class="side-bar-img" alt=""></a><br>
+                <i class="far fa-bookmark"></i>&nbsp
+                <a href="../reads/wie-baut-man-so-einen-blog.html" class="side-bar-topic">Wie baut man so eine Webseite?</a>
+              </div><br>
+
+            </div>
+        </aside>
+        <!-- End of Side-Bar -->
+
+      </div>
+    </section>
+    <!-- End of Site Content -->
+
+  </main>
+  <!-- End of Main Site Section -->
+
+  <!-- Start of Footer -->
+  <br><br><br>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="contact">
+        <a href="../contact.html">Kontakt</a>
+      </div>
+      <div class="terms">
+        <a href="../impressum.html">Impressum</a>
+      </div>
+      <div class="privacy">
+        <a href="../datenschutz.html">Datenschutz</a>
+      </div>
+      <div class="move-up">
+        <span><i class="fas fa-chevron-circle-up"></i></span>
+      </div>
+    </div>
+  </footer>
+  <!-- End of Footer -->
+
+  <!-- custom JQuery library file -->
+  <script src="../../js/Jquery3.5.0.min.js"></script>
+  <!-- owl carousel -->
+  <script src="../../js/owl.carousel.min.js"></script>
+
+  <script src="../../js/main.js"></script>
+</body>
+
+</html>

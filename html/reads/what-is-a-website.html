@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="description" content="Code alleine ist ja nur Text. Und irgendwie muss dieser Text in eine schöne, visuelle Webseite verwandelt werden. Dafür ist dein Browser zuständig. Was genau dieser macht, erfährst du bei CoffeeCodeBreak.">
+  <title>Wie wird aus Code eine Webseite? Eine einfache Erklärung.</title>
+
+  <!-- Google Tag Manager -->
+  <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+  new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+  j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+  'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+  })(window,document,'script','dataLayer','GTM-53XZFM5');</script>
+  <!-- End Google Tag Manager -->
+
+  <!-- stylesheet from font awesome -->
+  <link rel="stylesheet" href="../../css/all.css">
+
+  <!-- include google fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Herr+Von+Muellerhoff&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
+
+  <!-- custom style -->
+  <link rel="stylesheet" href="../../css/style.css">
+
+  <!-- include favicon -->
+  <link rel="apple-touch-icon" sizes="180x180" href="../../assets/favi-180-1.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favi-32-1.png">
+  <link rel="shortcut icon" type="image/png" sizes="16x16" href="../../assets/favi.ico">
+
+  <!-- include Cookieconsent by osano (open source on github) -->
+  <link rel="stylesheet" type="text/css" href="../../css/cookieconsent.min.css" />
+  <script src="../../js/cookieconsent.min.js"></script>
+  <script>
+  window.addEventListener("load", function(){
+    window.cookieconsent.initialise({
+      "palette": {
+      "popup": { "background": "#f2f4f7"},
+      "button": { "background": "#DAA520"}
+      },
+      "theme": "classic",
+      "position": "top",
+      "static": "true",
+      "type": "opt-in",
+      "content": {
+      "message": "Um diese Website für dich so interessant wie möglich zu gestalten, kommen Cookies und Google Analytics zum Einsatz. Bist du damit einverstanden? (Du kannst deine Entscheidung jederzeit ändern.)",
+      "deny":"Ablehnen",
+      "allow": "OK, gerne!",
+      "link": "Datenschutzerklärung",
+      "href": "https://coffeecodebreak.de/html/datenschutz.html"
+      }
+    })
+  });
+  </script>
+
+</head>
+
+<body>
+
+  <!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-53XZFM5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+  <!-- Navigation -->
+ <section>
+  <nav class="nav-bar">
+    <div class="nav-menue flex-row">
+      <div class="nav-brand">
+        <a href="../../index.html" class="text-gray"  style="color:#DAA520;">CoffeeCodeBreak</a> <!-- href="#"scrolls to top -->
+      </div>
+      <div>
+        <div class="toggle-collapse">
+          <div class="toggle-icon">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+      </div>
+      <div>
+        <ul class="nav-items">
+          <li class="nav-link home">
+            <a href="../../index.html">Home</a>
+          </li>
+          <li class="nav-link page-gold">
+            <a href="../reads.html">Tech-Reads</a>
+          </li>
+          <li class="nav-link">
+            <a href="../inspiration.html">Inspiration</a>
+          </li>
+          <li class="nav-link">
+            <a href="../career.html">Career</a>
+          </li>
+          <li class="nav-link">
+            <a href="../about.html">About</a>
+          </li>
+        </ul>
+      </div>
+      <div class="social">
+        <a href="https://github.com/Caro-C" target="_blank" data-title="Github"><i class="fab fa-github"></i></a>&nbsp &nbsp
+        <a href="https://www.linkedin.com/in/carolyn-covic-a22461ba/" target="_blank" data-title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+
+  </nav>
+  </section>
+
+  <!-- End of Navigation -->
+
+  <!-- Start of Main Site Section -->
+  <main>
+    <!-- Start of Site Title -->
+    <section class="site-title page-title single-title">
+      <div>
+        <div class="logo"><a href='../../index.html'>CoffeeCodeBreak</a></div>
+        <div class="date">Tech blog to inspire</div>
+      </div>
+    </section>
+    <!-- End of Site Title -->
+
+    <!-- Start of Site Content -->
+    <section class="container">
+      <div class="single-content">
+          <div class="single-blog-post">
+              <div class="single-post-header">
+                <h1 class="h1-for-post"><a href="#">Wie wird aus meinem Code eine schöne Webseite?</a></h1><br>
+                <div class="date">Mai 2020</div>
+              </div>
+              <div class="level-and-breadcrumb">
+              <div class="level level-single-post">Level &nbsp &nbsp<div class="circle" style="background-color:#DAA520;"></div> <div class="circle"></div> <div class="circle"></div>&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp</div>
+              <div class="breadcrumb breadcrumb-single-post">
+                <a href="../../index.html" class="breadcrumb-hover">Home </a> >
+                <a href="../reads.html" class="breadcrumb-hover">Reads </a> >
+                Wie wird aus meinem Code eine schöne Webseite?
+              </div>
+            </div>
+              <div class="single-post-image">
+                <img src="../../assets/website8.jpg" alt="Code-Editor in Laptop">
+              </div>
+              <div class="single-short-text">
+                  Ich hatte dir versprochen, noch einmal genauer zu erzählen, wie aus all dem Code
+                  am Ende eine Webseite wird. Code allein ist ja nur Text und dazu auch
+                  noch eine ziemlich unleserliche Art von Text.
+                  Irgendetwas muss den Code jetzt zum Leben erwecken und das schöne Bild
+                  aus ihm machen, das du dir ausgedacht und programmiert hast.
+              </div>
+              <div class="single-post-text">
+
+                <h2 class="h2-for-post">Erst einmal muss der Code in den Browser</h2>
+
+                Ich liebe den Moment, in dem ich das, was ich mir ausgedacht und als Code formuliert habe, plötzlich in einem echten Browser sehen kann. Dazu muss meine Webseite noch nicht einmal online sein. Ich kann meine Dateien auch an meinen Browser übergeben, wenn sie ausschließlich auf meinem Laptop gespeichert sind. So kann ich mir das Ganze anschauen, bevor ich es veröffentliche. Das ist ziemlich praktisch, weil ich beim ersten Versuch selten direkt mit dem Ergebnis zufrieden bin.<br><br>
+
+                Nehmen wir aber an, mein Blog ist online und du gibst in deinem Browser "www.coffeecodebreak.de" ein. Wenn du meinen Artikel
+                <a href="../reads/wie-kommt-der-blog-ins-internet.html" class="blog-links">Und wie kommt der Blog jetzt ins Internet?</a>
+                gelesen hast, erinnerst du dich vielleicht daran, dass meine Dateien mit meinem Code (und allem, was noch dazugehört) auf einem Webserver liegen. Dein Browser schickt eine Anfrage an diesen Webserver. Der antwortet wiederum, indem er deinem Browser alles schickt, was nötig ist, um meine Webseite anzuzeigen. Das ist nicht nur mein Code, sondern zum Beispiel auch Bilddateien für die Fotos, die du sehen kannst. <br><br>
+
+                Nur weil das Ganze jetzt in deinem Browser angekommen ist, sieht es aber noch nicht schön aus. Im Prinzip sieht es noch überhaupt nicht aus. Irgendetwas muss jetzt noch passieren, damit du meine Webseite mit all ihren Blog-Posts, Fotos und Farben sehen kannst. Und dafür ist ein Programm zuständig, das in deinem Browser enthalten ist. Dieses Programm heißt Rendering Engine. Mit “Rendern” ist nichts anderes gemeint, als aus meinem HTML- und CSS-Code eine visuelle Darstellung zu machen.<br><br>
+
+                <h2 class="h2-for-post">Wie die Rendering-Engine den Code "übersetzt"</h2>
+                <h4>Die Struktur meines HTML-Codes</h4>
+
+                Um das mit dem Rendern zu verstehen, müssen wir uns noch einmal mein HTML-Dokument ansehen.<br>
+                Mein HTML-Code hat eine bestimmte Struktur. Diese Struktur setzt sich aus allen Elementen zusammen, die gemeinsam den Inhalt meiner Seite bilden. Sie sind ineinander verschachtelt, nebeneinander oder nacheinander angeordnet.<br><br>
+
+                Wie sehr häufig in der IT lässt sich das Ganze als klassische Baumstruktur mit Elternknoten und Kindknoten darstellen. Beispielsweise ist meine Sidebar ein Elternknoten, der verschiedene Kindknoten hat: "About Me", mein Profilbild, meine Kontaktbox usw. Dabei hat die Sidebar selbst wieder einen Elternknoten (das Element, in dem mein Seiteninhalt liegt) und einen Geschwisterknoten (das Element, in dem die Blogposts liegen).
+                Mein kompletter HTML-Code lässt sich also in einer Baumstruktur abbilden. Diesen Baum kannst du dir ungefähr so vorstellen:<br><br>
+
+                <div class="single-post-image">
+                  <img src="../../assets/dom-tree.jpg" alt="Document Object Model Baumstruktur">
+                </div><br>
+
+                Außerdem haben meine HTML-Elemente jeweils einen bestimmten “Charakter”. Manche habe ich zum Beispiel als Überschrift definiert, andere als Paragraph und wieder andere als Bild.
+                Wie genau das mit HTML funktioniert, werde ich dir noch einmal in einem anderem Post erklären.<br>
+
+                <h4>Die Rolle von CSS</h4>
+                Wenn ich keinen zusätzlichen CSS-Code geschrieben hätte, wäre meine Webseite nach dem Rendern eine ganz schön hässliche Auflistung von Text und Bildern. Sie würde dann in etwa so aussehen:<br><br>
+
+                <div class="single-post-image">
+                  <img src="../../assets/website-ohne-css.PNG" alt="Website ohne CSS gerendert">
+                </div><br>
+
+                Zum Glück hat der Webserver aber auch meinen CSS-Code an deinen Browser geschickt. Meinen Elementen in HTML habe ich bestimmte “Namen” zur Identifizierung gegeben (technisch gesprochen habe ich ihnen Klassen und IDs gegeben). Über diese Namen kann ich mir in CSS ein HTML-Element herauspicken und dieses gestalten. Mein LinkedIn-Symbol wird nur deshalb oben rechts angezeigt, weil ich in CSS definiert habe, dass es dort stehen soll. Und weil du gerade einen Post der Kategorie READS liest, ist READS oben gold eingefärbt. Auch das habe ich mit CSS bestimmt.<br>
+
+                <h4>Die Aufgabe der Rendering Engine</h4>
+                Zurück zur Rendering Engine. Die Rendering Engine erkennt die Baumsturktur meines HTML-Codes. Eigentlich zerlegt sie diesen sogar in die einzelnen Elemente und baut den Baum nochmal selbst nach.
+                Dabei erkennt sie jeweils, um was für ein Element es sich handelt -  eine Überschrift, ein Link, ein Bild usw. Und da ich für die Elemente in meinem CSS-Code festgelegt habe, wie sie aussehen und wo sie angeordnet werden sollen, kennt die Rendering Engine diese Information auch. Wenn sie die Baumstruktur aufgebaut hat, durchläuft sie diese ganz schematisch und berechnet Element für Element, wo und wie genau es in deinem Bildschirm angezeigt werden soll. Und so unterstützt sie den Browser dabei, meinen Code als schöne Webseite darzustellen.<br><br>
+
+                Auf diese Weise wird aus meinem Code genau der Blog, den du gerade liest. Du siehst also die Visualisierung von dem, was ich mir ausgedacht und mit Code beschrieben habe. Eine Zusammenstellung verschiedener Elemente, die ich nach meinen Vorstellungen angeordnet, gestaltet und mit Inhalt gefüllt habe. Ziemlich faszinierend, oder? Ein Frontend zu programmieren ist also ein bisschen wie malen, nur mit Text! <br><br>
+
+                Vielleicht ist dir aufgefallen, dass ich nur von HTML und CSS gesprochen habe. In meinen anderen Posts hatte ich JavaScript als weitere Sprache erwähnt. Mit JavaScript kann ich meine Seite interaktiv machen. Das kommt aber erst dann richtig zum Zug, wenn meine Seite schon angezeigt wird.<br><br>
+
+                Ich hoffe, der Artikel hat dir gefallen und dich ein bisschen weitergebracht!<br><br>
+
+                Bis bald!<br><br>
+
+                Deine Caro
+
+              </div>
+              <div class="breadcrumb">
+                <a href="../reads.html" class="breadcrumb-hover"><u>zurück zu Reads</u></a> >
+              </div><br>
+
+              <div class="comments">
+                <h2 class="h2-for-post">Schreibe einen Kommentar</h2>
+                Ich freue mich, wenn du mir einen Kommentar hinterlässt. Deine E-Mail-Adresse wird nicht veröffentlicht. Die mit * gekennzeichneten Felder müssen ausgefüllt werden, um den Kommentar zu versenden. Bis dein Kommentar veröffentlicht wird, kann es einige Stunden dauern.<br><br>
+                <form action="mailto:coffeecodebreak@gmail.com" method="post" enctype="text/plain">
+                  Kommentar<br> <textarea name="Comment" rows="10" cols="40"></textarea><br><br>
+                  Name* (wie er angezeigt werden soll)<br> <input name="Name" size="40"><br>
+                  Email*<br> <input name="Email" size="40"><br>
+                  Website<br> <input name="Website" size="40"><br><br>
+
+                  <input type="submit" value="Senden">
+                  <input type="reset" value="Abbrechen">
+
+                </form>
+              </div>
+
+            </div>
+
+
+        <!-- Start of Side-Bar -->
+        <aside class="side-bar side-bar-posts page-side-bar">
+            <div class="side-bar-post-x">
+              <div id="about-me">About me </div>
+              <div id="intro">Hi, ich bin Caro und ich schreibe über meinen Weg
+                 in die Welt der Softwareentwicklung.<br>
+                 Ich möchte meine Erfahrungen mit dir teilen und dir die Tür
+                 zu dieser Welt öffnen. Mein Ziel ist es, dich mit kleinen
+                 Tech-Stories zu inspirieren und neugierig zu machen.<br>
+                 Hol dir einen Kaffee und bereichere deine Pause mit einem kleinen Stück neuem Wissen :)<br>
+                 <span class="read-more"><a href="../about.html">> Read more</a></span>
+              </div>
+              <div class="profile-pic">
+                <img src="../../assets/profile.jpg" id="profile-pic" alt="profile picture">
+              </div>
+
+              <div class="sidebar-contact">
+                Hast du Fragen, Anregungen oder Feedback?<br>
+                Ich freue mich, wenn du mir schreibst!<br>
+                <a href="mailto: coffeecodebreak@gmail.com" class="email"><i class="far fa-envelope"></i></a>&nbsp &nbsp
+                <a href="https://www.linkedin.com/in/carolyn-covic-a22461ba/" target="_blank" class="email"><i class="fab fa-linkedin-in"></i></a>
+              </div>
+
+            </div>
+
+            <div class="side-bar-post-x">
+              <div id="favorite-posts">Favorite Posts </div>
+
+              <hr><br>
+              <div class="side-bar-collection">
+                <a href="../reads/wie-kommt-der-blog-ins-internet.html"><img src="../../assets/internet8.jpg" class="side-bar-img" alt=""></a><br>
+                <i class="far fa-bookmark"></i>&nbsp
+                <a href="../reads/wie-kommt-der-blog-ins-internet.html" class="side-bar-topic">Und wie kommt der Blog jetzt ins Internet?</a>
+              </div><br>
+
+              <div class="side-bar-collection">
+                <a href="../reads/wie-baut-man-so-einen-blog.html"><img src="../../assets/blog8.jpg" class="side-bar-img" alt=""></a><br>
+                <i class="far fa-bookmark"></i>&nbsp
+                <a href="../reads/wie-baut-man-so-einen-blog.html" class="side-bar-topic">Wie baut man so eine Webseite?</a>
+              </div><br>
+
+            </div>
+        </aside>
+        <!-- End of Side-Bar -->
+
+      </div>
+    </section>
+    <!-- End of Site Content -->
+
+  </main>
+  <!-- End of Main Site Section -->
+
+  <!-- Start of Footer -->
+  <br><br><br>
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="contact">
+        <a href="../contact.html">Kontakt</a>
+      </div>
+      <div class="terms">
+        <a href="../impressum.html">Impressum</a>
+      </div>
+      <div class="privacy">
+        <a href="../datenschutz.html">Datenschutz</a>
+      </div>
+      <div class="move-up">
+        <span><i class="fas fa-chevron-circle-up"></i></span>
+      </div>
+    </div>
+  </footer>
+  <!-- End of Footer -->
+
+  <!-- custom JQuery library file -->
+  <script src="../../js/Jquery3.5.0.min.js"></script>
+  <!-- owl carousel -->
+  <script src="../../js/owl.carousel.min.js"></script>
+
+  <script src="../../js/main.js"></script>
+</body>
+
+</html>
