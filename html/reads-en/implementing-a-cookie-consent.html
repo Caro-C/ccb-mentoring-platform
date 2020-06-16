@@ -167,7 +167,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 So I was facing two challenges: on the one hand, I had to find out what I actually needed and on the other hand, I had to find a technical solution for it. Of course I am not a lawyer and if you need detailed information, you should always consult an expert. This is definitely not an article about all the legal aspects you have to consider when running a website. There are far too many different cases and types of websites for that.<br><br>
 
-                But what is sure: to evaluate your behaviour on my website with Google Analytics I need your permission. I need to get this permission when you open my website in your browser. This is done via a cookie banner. Of course I also have to give you the possibility to reject the tracking.<br><br>
+                But what is sure: to evaluate your behaviour on my website with Google Analytics I need your permission. I need to get this permission when you open my website in your browser. This is done via a cookie banner. And of course I also have to give you the possibility to reject the tracking.<br><br>
 
                 Naively, I had assumed that this was something that could be done in two hours. And especially concerning the technical side, I had expected - as for almost everything else - quick and easy solutions and enough tutorials. But in the end I had to tediously collect the individual pieces. Therefore I would like to share with you what was my solution to the problem in the end. This is certainly not the only solution, but one that worked out great for me. What exactly you need for your website depends on your situation.<br><br>
 
@@ -184,7 +184,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <li>Test if it works
                 </ol>
 
-                In the rest of this post you will find my key-findings for the individual points. Since the topic cookie banner was the most complex for me (but actually it's quite easy once you know what you have to do), I'll go into it in more detail. Concerning the other points I will tell you what helped me for my overall understanding. I also wrote down the things that I don't want to forget and that I would have to collect again next time. For everything else you can easily find more information and details on the internet. Of course you can also write me any time if you have questions.<br><br>
+                In the rest of this post you will find my key-findings for the individual steps. Since the topic cookie banner was the most complex for me (but actually it's quite easy once you know what you have to do), I'll go into it in more detail. Concerning the other points I will tell you what helped me for my overall understanding. I also wrote down the things that I don't want to forget and that I would have to collect again next time. For everything else you can easily find more information and details on the internet. Of course you can also write me any time if you have questions.<br><br>
 
                 Let's get started! :)<br><br>
 
@@ -203,11 +203,11 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 After some searching I found a very popular open source solution which is based on Github:
                 <a href="https://github.com/osano/cookieconsent" target="_blank" class="blog-links">CookieConsent by Osano</a>.
                 On the
-                <a href="https://www.osano.com/cookieconsent/download/" target="_blank" class="blog-links">Osano Website</a> there is even a configurator for your cookie banner, which generates the desired code for you. This code you then insert into your HTML files. This way you do not have to play around with the CookieConsent code.  (The configurator opens when you click on 'Start Coding'.) Select the 'Ask users to opt INTO cookies' option under 'Compliance Type' to create an opt-in banner.<br><br>
+                <a href="https://www.osano.com/cookieconsent/download/" target="_blank" class="blog-links">Osano Website</a> there is even a configurator for your cookie banner, which generates the desired code for you. This code you then insert into your HTML files. This way you don't have to play around with the CookieConsent code itself.  (The configurator opens when you click on 'Start Coding'.) Select the 'Ask users to opt INTO cookies' option under 'Compliance Type' to create an opt-in banner.<br><br>
 
-                The CookieContent code can be integrated into your own code in a number of ways, as described on Github. The Osano configurator offers you a CSS link under 'Copy the Code', which you can include in the head of your HTML files. Since I wanted the code to be with my other files, I copied the required JavaScript and CSS code and put it as separate files in my folder structure. Here you can find the
+                The CookieContent code can be integrated into your own code in a number of ways, as described on Github. The Osano configurator offers you a CSS link under 'Copy the Code', which you can include in the head of your HTML files. Since I wanted the entire code to be with my other files, I copied the required JavaScript and CSS code and put it as separate files in my folder structure. Here you can find the
                 <a href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" target="_blank" class="blog-links">min.js</a> and the <a href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" target="_blank" class="blog-links">min.css</a> code.<br>
-                Instead of using the CSS link from Osano you have to specify the folder path to the files. Together with the rest of the code from the configurator, the whole thing looks like this in my case (I put everything I need for my cookie banner in one piece in the head of my HTML files)<br><br>
+                Instead of using the CSS link from Osano you have to specify the folder path to the files then. Together with the rest of the code from the configurator, the whole thing looks like this in my case (I put everything I need for my cookie banner in one piece in the head of my HTML files)<br><br>
 
                 <div class="single-post-image">
                   <img src="../../assets/cookieconsent.PNG" alt="Code for Cookie-Consent">
@@ -220,8 +220,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 After I had finally managed to integrate a cookie banner into my website, I had to make sure that it would work. The whole bunch of work had begun with the fact that I wanted to use Google Analytics. So the next step was to set up Google Analytics.<br><br>
                 As I mentioned above, this is quite simple. Roughly speaking: you go to analytics.google.com, log in via your Google account (or create a new one if you don't have one yet), create an analytics account and a new 'property' for your website. There are really great YouTube tutorials with lots of useful tips and hints.<br><br>
 
-                Google Analytics offers you a tracking code that you can embed in your HTML files. An important hint: if you do so, you have to do an IP-anonymization by including an <em>anonymizeIp</em> in the code! There are also many instructions for this.<br>
-                If you use the Google Tag Manager, you do not need to use the tracking code directly. Since I didn't want to include the tracking code from Google Analytics in my code, but use the Tag Manager instead, I was done with creating my website as a property here for now.<br><br>
+                Google Analytics offers you a tracking code that you can embed in your HTML files. An important hint: if you do so, you have to do an IP-anonymization by including an <em>anonymizeIp</em> in the code (at least in Germany)! There are also many instructions for this.<br>
+                If you use the Google Tag Manager, you don't need to use the tracking code directly. Since I didn't want to include the tracking code from Google Analytics in my code, but use the Tag Manager instead, I was done here for now.<br><br>
 
                 <h2 class="h2-for-post">3. Set up Google Tag Manager</h2>
 
@@ -235,7 +235,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <img src="../../assets/gtm-integration.png" alt="Google Tag Manager Code in HTML">
                 </div><br>
 
-                Since I didn't use the Google Analytics tracking code to make the anonymization of your IP address, I had to do this here. To do this, you create a variable in the Tag Manager for which you enter the tracking ID of the website (you can find it at Google Analytics). Then you choose 'anonymizeIp' as a field name and set the value to 'true'. Should look something like this:<br><br>
+                Since I didn't use the Google Analytics tracking code to make the anonymization of your IP address, I had to do this here. To do this, you create a variable in the Tag Manager for which you enter the tracking ID of your website (you can find it at Google Analytics). Then you choose 'anonymizeIp' as a field name and set the value to 'true'. Should look something like this (sorry for the german version :)):<br><br>
 
                 <div class="single-post-image">
                   <img src="../../assets/googletagmanager1.png" alt="anonymizeIp in Google Tag Manager">
@@ -249,13 +249,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 If you click on 'Reject' or 'Okay, sure!' in my cookie banner, the CookieConsent code snippet that checks how you decided ('cookieconsent_status') will set the status to <em>allow</em> or <em>deny</em>. And exactly this information is needed by my Google Tag Manager to tell Google Analytics that it may or may not start.<br><br>
 
-                In order for the Google Tag Manager to receive and process the necessary information, I have created a variable of the type <em>First-Party-Cookie</em> for my CoffeeCodeBreak container and stored the name of the 'verification code snippet' (i.e. 'cookieconsent_status') in it.<br><br>
+                In order for the Google Tag Manager to receive and process the necessary information, I have created a variable of the type <em>First-Party-Cookie</em> for my CoffeeCodeBreak container. In this variable I stored the name of the 'verification code snippet' (i.e. 'cookieconsent_status').<br><br>
 
                 <div class="single-post-image">
                   <img src="../../assets/googletagmanager2.png" alt="Variable configuration in Google Tag Manager">
                 </div><br>
 
-                To make sure that my Google Tag Manager only allows tracking if the status is 'allow', I created a trigger in the Tag Manager. I gave this trigger the type 'page view' and specified that Google Analytics may only be triggered if my CookieContent variable contains the value 'allow'. Here is a picture of the configuration:<br><br>
+                To make sure that my Google Tag Manager only allows tracking if the status is 'allow', I created a trigger in the Tag Manager. I gave this trigger the type 'page view'. Then I specified that Google Analytics may only be triggered if my CookieContent variable contains the value 'allow'. Here is a picture of the configuration:<br><br>
 
                 <div class="single-post-image">
                   <img src="../../assets/googletagmanager3.png" alt="Trigger configuration in Google Tag Manager">
