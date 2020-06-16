@@ -160,14 +160,14 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <h2 class="h2-for-post">Get the code into your browser</h2>
 
                 I love that moment when I can suddenly see what I have written as code in a real browser.
-                My website doesn't even have to be online for that. I can also transfer my files to my browser if they are only stored on my laptop.
-                So I can look at the whole thing before I publish it. This is quite handy because I'm rarely directly satisfied with the result on the first try.<br><br>
+                My website doesn't even have to be online for that. I can simply pull my code-files into my browser to view the page.
+                So I can look at the whole thing before I publish it. This is quite handy because I'm rarely satisfied with the result on the first try.<br><br>
 
-                But let's assume that my blog is online and you type "www.coffeecodebreak.de" in your browser. If you read my article
-                <a href="../reads-en/get-a-website-to-the-internet.html" class="blog-links">How to get a website on the internet?</a>
-                you might remember that my files with my code (and everything else that goes with it) are based on a web server. Your browser sends a request to this web server. The server in turn replies by sending your browser everything it needs to display my web page. This is not only code, but also, for example, image files for the photos you can see. <br><br>
+                But let's assume that my blog is online and you type 'www.coffeecodebreak.de' in your browser. If you read my article
+                <a href="../reads-en/get-a-website-to-the-internet.html" class="blog-links">How to get a website on the internet</a>
+                you might remember that my code-files (and everything else that goes with it) are based on a web server. Your browser sends a request to this web server. The server in turn replies by sending your browser everything it needs to display my web page. This is not only code, but also, for example, image files for the pictures you can see. <br><br>
 
-                Just because the whole thing has now arrived in your browser, it does not look nice yet. Actually it does not look like anything at all. Something has to happen now so that you can see my website with all its blog posts, photos and colors. And this is done by a program that is included in your browser. This program is called Rendering Engine. 'Rendering' means nothing else than turning my HTML and CSS code into a visual representation.<br><br>
+                Just because the whole thing has now arrived in your browser, it does not look nice yet. Actually it does not look like anything at all. Something has to happen now so that you can see my website with all its blog posts, images and colors. And this is done by a program that is included in your browser. This program is called Rendering Engine. 'Rendering' means nothing else than turning my HTML and CSS code into a visual representation.<br><br>
 
                 <h2 class="h2-for-post">How the rendering engine 'translates' the code</h2>
                 <h4>The structure of my HTML code</h4>
@@ -175,7 +175,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 To understand about rendering, we have to look at my HTML document again.<br>
                 My HTML code has a certain structure. This structure consists of all elements that together form the content of my page. They are nested, arranged next to each other or one after the other.<br><br>
 
-                As is very common in IT, the whole thing can be represented as a classic tree structure with parent nodes and child nodes. For example, my sidebar is a parent node that has different child nodes: 'About Me', my profile picture, my contact box, etc. Again, the sidebar itself has a parent node (the element where my page content lies) and a sibling node (the element where the blog posts lie).
+                As is very common in IT, the whole thing can be represented as a classic tree structure with parent nodes and child nodes. For example, my sidebar is a parent node that has different child nodes: 'About Me', my profile picture, my contact box, etc. Again, the sidebar itself has a parent node (the element containing my page content) and a sibling node (the element containing the blog posts).
                 My complete HTML code can be displayed in a tree structure. You can imagine this tree like this:<br><br>
 
                 <div class="single-post-image">
@@ -192,7 +192,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                   <img src="../../assets/website-ohne-css.PNG" alt="Redered website without CSS">
                 </div><br>
 
-                Fortunately, the web server also sent my CSS code to your browser. I gave my elements in HTML certain 'names' for identification (technically speaking, I gave them classes and IDs). Using these names I can pick out an HTML element in CSS and design it. My LinkedIn symbol is only shown in the upper right corner because I defined in CSS that it should be there. And because you are reading a post of the category READS, READS is colored gold at the top. I have defined this with CSS as well.<br>
+                Fortunately, the web server also sent my CSS code to your browser. I gave my elements in HTML certain 'names' for identification (technically speaking, I gave them classes and IDs). Using these names I can pick out an HTML element in CSS and design it. My LinkedIn symbol is only shown in the upper right corner because I defined in CSS that it should be there. And because you are reading a post of the category TECH-READS, TECH-READS is colored gold at the top. I have defined this with CSS as well.<br>
 
                 <h4>The job of the Rendering Engine</h4>
                 Back to the rendering engine. The rendering engine recognizes the tree structure of my HTML code. Actually, it even breaks it down into its individual elements and rebuilds the tree itself.
