@@ -73,8 +73,13 @@ h2{
 
 .h2-for-post{
   font-size: 1.2em;
-  font-weight: bold;
+  font-weight: 900;
   text-transform: none;
+}
+
+h5{
+  font-size: 0.9rem;
+  color: #666665;
 }
 
 .container{
