@@ -211,7 +211,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <a href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" target="_blank" class="blog-links">min.js</a> und den <a href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" target="_blank" class="blog-links">min.css</a> Code.<br>
                 Anstatt des CSS-Links von Osano musst du dann jeweils den Ordnerpfad zu den Dateien angeben. Zusammen mit dem restlichen Code aus dem Konfigurator sieht das Ganze bei mir so aus: (ich habe alles, was ich für mein Cookie-Banner benötige, in einem Stück in den head meiner HTML-Dateien gesetzt)<br><br>
 
-                <div class="single-post-image">
+                <div class="single-post-sub-image">
                   <img src="../../assets/cookieconsent.PNG" alt="Code für Cookie-Consent">
                 </div><br>
 
@@ -233,13 +233,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 Im Großen und Ganzen habe ich ein Konto und darin einen Container für meine Webseite erstellt und in diesen Container mein Google Analytics Tag gesetzt. Vergiss hier nicht, den Code, den der Google Tag Manager für deinen Container generiert, in den body deiner HTML-Dateien zu setzen. So verbindest du den Tag Manager mit deiner Webseite.<br><br>
 
-                <div class="single-post-image">
+                <div class="single-post-sub-image">
                   <img src="../../assets/gtm-integration.png" alt="Google Tag Manager Code in HTML">
                 </div><br>
 
                 Da ich ja nicht den Google Analytics Tracking Code benutzt und dort die Anonymisierung deiner IP-Adresse vorgenommen hatte, musste ich das hier noch tun. Dazu kann man im Tag Manager eine Variable anlegen, für die man die Tracking-ID der Webseite eingibt (findest du bei Google Analytics), als Feldname “anonymizeIp” wählt und den Wert auf “true” setzt. Das sieht dann so aus:<br><br>
 
-                <div class="single-post-image">
+                <div class="single-post-sub-image">
                   <img src="../../assets/googletagmanager1.png" alt="anonymizeIp in Google Tag Manager">
                 </div><br>
 
@@ -253,13 +253,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 Damit der Google Tag Manager die nötigen Informationen erhält und verarbeiten kann, habe ich dort für meinen CoffeeCodeBreak-Container eine Variable des Typs <em>First-Party-Cookie</em> erstellt und in dieser den Namen des “Überprüfungs-Code-Schnipsels” hinterlegt (also “cookieconsent_status”).<br><br>
 
-                <div class="single-post-image">
+                <div class="single-post-sub-image">
                   <img src="../../assets/googletagmanager2.png" alt="Variablen-Konfiguration in Google Tag Manager">
                 </div><br>
 
                 Um dann noch sicherzustellen, dass mein Google Tag Manager das Tracking über Google Analytics nur zulässt, wenn der Status “allow” lautet, habe ich im Tag Manager einen Trigger erstellt. Diesem Trigger habe ich den Typ “Seitenaufruf” gegeben und festgelegt, dass Google Analytics nur dann ausgelöst werden darf, wenn meine CookieConsent-Variable den Wert “allow” enthält. Hier noch ein Bild zur Konfiguration:<br><br>
 
-                <div class="single-post-image">
+                <div class="single-post-sub-image">
                   <img src="../../assets/googletagmanager3.png" alt="Trigger-Konfiguration in Google Tag Manager">
                 </div><br>
 

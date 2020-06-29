@@ -94,8 +94,10 @@ h5{
   text-decoration: underline;
 }
 
-.werbung{
-  color: var(--text-light-gray);
+.background-color{
+  background: #f2f4f7;
+  padding: 1.5rem 2rem;
+  text-align: center;
 }
 
 [data-title]:hover:after{
@@ -581,6 +583,10 @@ h5{
   width: 85%;
 }
 
+.single-post-sub-image > img{
+  width: 100%
+}
+
 .single-short-text{
   font-style: italic;
   font-size: 0.9rem;
@@ -694,6 +700,9 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .site-title{
     padding-top: 5rem;
     height: 15rem;
+  }
+  .about-page{
+    height: 25% !important;
   }
   #page-slogan{
     padding-bottom: 3rem !important;
