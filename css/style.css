@@ -789,13 +789,15 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .level-and-breadcrumb{
     margin-left: 2%;
   }
-
   .breadcrumb-single-post{
     padding-bottom: 18px;
   }
   .last-post{
     margin-right: unset !important;
     padding-left: 1.5rem !important;
+  }
+  .background-color{
+    padding: 1.5rem 2rem;
   }
 }
 
