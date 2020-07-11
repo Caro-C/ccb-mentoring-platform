@@ -77,6 +77,10 @@ h2{
   text-transform: none;
 }
 
+h4{
+  font-size: 1rem;
+}
+
 h5{
   font-size: 0.9rem;
   color: #666665;
@@ -88,6 +92,7 @@ h5{
 
 .blog-links{
   color: var(--text-gold);
+  font-weight: bolder;
 }
 
 .blog-links:hover{
