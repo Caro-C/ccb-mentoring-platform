@@ -190,7 +190,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 Los geht’s! :)<br><br>
 
-                <h2 class="h2-for-post">1. Cookie-Banner implementieren</h2>
+                <h4>1. Cookie-Banner implementieren</h4>
 
                 Du kennst sie sicherlich - die Cookie-Banner, die dir auf so gut wie jeder Webseite angezeigt werden, die du besuchst.<br>
                 Es gibt die verschiedensten Arten von Cookie-Bannern. Manche informieren dich lediglich darüber, dass du dem Setzen von Cookies zustimmst, wenn du weiterhin auf dieser Seite bleibst. Diese Variante ist nicht wirklich fair und auch nicht ganz legal.<br>
@@ -217,7 +217,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 Übrigens: in der min.css-Datei findest du unter anderem das Styling für den <em>revoke-Button</em> (die Klasse heißt “cc-revoke”). Das ist der Button, der bei mir oben links über dem Logo sitzt und über den du das Cookie-Banner jederzeit erneut aufrufen kannst. Wenn du dich mit CSS etwas auskennst, kannst du diesen in min.css optisch anpassen.<br><br>
 
-                <h2 class="h2-for-post">2. Google Analytics einrichten</h2>
+                <h4>2. Google Analytics einrichten</h4>
 
                 Nachdem ich es endlich geschafft hatte, ein Cookie-Banner nach meinen Vorstellungen in meine Webseite einzubauen, musste ich dafür sorgen, dass es auch funktioniert. Der ganze Berg Arbeit hatte ja damit begonnen, dass ich Google Analytics einsetzen wollte. Also war der nächste Schritt, Google Analytics aufzusetzen.<br><br>
                 Wie ich es oben bereits erwähnt habe, ist das recht einfach. Grob gesagt: du gehst auf analytics.google.com, meldest dich über deinen Google-Account an (oder erstellst einen neuen, solltest du noch keinen haben), erstellst ein Analytics-Konto und für deine Webseite ein neues “Property”. Dazu gibt es wirklich tolle Youtube-Tutorials mit vielen sinnvollen Tipps und Hinweisen.<br><br>
@@ -225,7 +225,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 Google Analytics bietet dir einen Tracking-Code an, den du in deine HTML-Dateien einbinden kannst. Ein wichtiger Hinweis hierzu: falls du das machst, musst du unbedingt eine IP-Anonymisierung vornehmen, indem du ein <em>anonymizeIp</em> in den Code einbaust! Auch dazu gibt es viele Anleitungen.<br>
                 Wenn du den Google Tag Manager benutzt, musst du den Tracking Code nicht direkt verwenden. Da ich den Tracking-Code von Google-Analytics nicht in meinen Code einbinden, sondern stattdessen den Tag Manager benutzen wollte, war ich mit dem Erstellen meiner Webseite als Property hier erst einmal fertig.<br><br>
 
-                <h2 class="h2-for-post">3. Google Tag Manager einrichten</h2>
+                <h4>3. Google Tag Manager einrichten</h4>
 
                 Zusammenfassend hatte ich bis dahin ein Cookie-Banner und ein Konto mit meiner Webseite als Property in Google-Analytics. Das alleine würde mir aber wenig dabei helfen, auf Basis der Entscheidung meiner Seitenbesucher Cookies bzw. Google Analytics zu aktivieren oder nicht. Ich musste es also irgendwie schaffen, Google Analytics mitzuteilen, dass es loslegen soll oder nicht - je nachdem, ob du auf meinem Cookie-Banner “Ablehnen” oder “Okay, gerne” angeklickt hast.<br><br>
 
@@ -247,7 +247,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 Nun hatte ich es fast geschafft. Mir fehlte nur noch die Verbindung zwischen meinem Cookie-Banner und dem Google Tag Manager. Und wie ich die hergestellt habe, erkläre ich dir noch kurz im nächsten Abschnitt.<br><br>
 
-                 <h2 class="h2-for-post">4. Cookie-Banner mit Google Tag Manager verbinden</h2>
+                 <h4>4. Cookie-Banner mit Google Tag Manager verbinden</h4>
 
                 Wenn du in meinem Cookie-Banner auf “Ablehnen” oder “Okay, gerne” klickst, wird der Status von dem CookieConsent-Code-Schnipsel, der überprüft, wie du dich entschieden hast (“cookieconsent_status”) auf <em>allow</em> oder <em>deny</em> gesetzt. Und genau diese Information benötigt mein Google Tag Manager, um Google Analytics zu sagen, dass es starten darf oder nicht.<br><br>
 
@@ -266,7 +266,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 Und damit war es geschafft! Wenn du jetzt auf meine Seite gehst und in meinem Cookie-Banner “Ablehnen” anklickst, erhält mein Google Tag Manager die Information, dass Google Analytics nicht aktiviert werden darf. Wenn du “Okay, gerne” anklickst, erhält der Tag Manager die Information, dass du das Tracking erlaubst und Google Analytics wird gestartet.<br>
                 Und das hilft mir wiederum dabei, zu sehen, welche Artikel wie häufig angeklickt wurden, wie viel Zeit mit den einzelnen Artikeln verbracht wurde usw. Das heißt, ich kann mehr Artikel schreiben, die euch interessieren könnten und weniger, die euch eventuell nicht so gut gefallen. Und außerdem freue ich mich natürlich riesig, wenn ich sehe, dass jemand meine Webseite besucht hat! :)<br><br>
 
-                <h2 class="h2-for-post">5. Testen, ob es funktioniert</h2>
+                <h4>5. Testen, ob es funktioniert</h4>
 
                 Um sicherzugehen, dass meine Einstellungen auch funktionieren, habe ich das Ganze noch getestet. Der Google Tag Manager bietet die Option, eine Vorschau anzusehen. Wenn du im Vorschaumodus deine Seite öffnest, kannst du direkt sehen, welche Tags aktiv sind und welche nicht. Ich habe meine Cookies abwechselnd abgelehnt und wieder zugelassen und dazwischen auf der Seite herum geklickt, um zu überprüfen, ob Google Analytics immer dann aktiv oder nicht aktiv war, wenn ich es wollte. Und das hat zum Glück einwandfrei funktioniert! :)<br><br>
 

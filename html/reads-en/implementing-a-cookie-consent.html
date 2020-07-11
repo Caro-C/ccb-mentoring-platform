@@ -188,7 +188,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 Let's get started! :)<br><br>
 
-                <h2 class="h2-for-post">1. Implement cookie banner</h2>
+                <h4>1. Implement cookie banner</h4>
 
                 You probably know them - the cookie banners that are displayed on almost every website you visit.<br>
                 There are many different types of cookie banners. Some simply inform you that you agree to the use of cookies if you continue to stay on this site.  This variant is not really fair and also not entirely legal - at least in Germany.<br>
@@ -215,7 +215,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 By the way: in the min.css file you will find the styling for the <em>revoke-button</em> (the class is called 'cc-revoke'). This is the light-gray button above my logo in the upper left corner. You can use it to reopen the cookie banner. If you know a little bit about CSS, you can customize it in min.css.<br><br>
 
-                <h2 class="h2-for-post">2. Set up Google Analytics</h2>
+                <h4>2. Set up Google Analytics</h4>
 
                 After I had finally managed to integrate a cookie banner into my website, I had to make sure that it would work. The whole bunch of work had begun with the fact that I wanted to use Google Analytics. So the next step was to set up Google Analytics.<br><br>
                 As I mentioned above, this is quite simple. Roughly speaking: you go to analytics.google.com, log in via your Google account (or create a new one if you don't have one yet), create an analytics account and a new 'property' for your website. There are really great YouTube tutorials with lots of useful tips and hints.<br><br>
@@ -223,7 +223,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 Google Analytics offers you a tracking code that you can embed in your HTML files. An important hint: if you do so, you have to do an IP-anonymization by including an <em>anonymizeIp</em> in the code (at least in Germany)! There are also many instructions for this.<br>
                 If you use the Google Tag Manager, you don't need to use the tracking code directly. Since I didn't want to include the tracking code from Google Analytics in my code, but use the Tag Manager instead, I was done here for now.<br><br>
 
-                <h2 class="h2-for-post">3. Set up Google Tag Manager</h2>
+                <h4>3. Set up Google Tag Manager</h4>
 
                 Now I had a cookie banner and my website as a property in Google Analytics. But this alone wouldn't help me much to activate Google Analytics based on the decision of my visitors. So I had to somehow manage to tell Google Analytics to get started or not. Depending on whether you clicked 'Reject' or 'Okay, sure!' on my cookie banner.<br><br>
 
@@ -245,7 +245,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
                 Now I was almost there. The only thing missing was the connection between my cookie banner and the Google Tag Manager. And how I made this, I will explain in the next section.<br><br>
 
-                 <h2 class="h2-for-post">4. Connect cookie banner with Google Tag Manager</h2>
+                 <h4>4. Connect cookie banner with Google Tag Manager</h4>
 
                 If you click on 'Reject' or 'Okay, sure!' in my cookie banner, the CookieConsent code snippet that checks how you decided ('cookieconsent_status') will set the status to <em>allow</em> or <em>deny</em>. And exactly this information is needed by my Google Tag Manager to tell Google Analytics that it may or may not start.<br><br>
 
@@ -264,7 +264,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 And that was it! If you go to my site now and click 'Reject' in my cookie banner, my Google Tag Manager will receive the information that Google Analytics must not be activated. If you click 'Okay, sure!', the tag manager will receive the information that you allow tracking and Google Analytics will be started.<br>
                 And that in turn helps me to see which items were clicked on how often, how much time was spent on each item, etc. This means I can write more articles that might be interesting for you and less that you might not like so much. And of course I'm really happy when I see that someone has visited my website! :)<br><br>
 
-                <h2 class="h2-for-post">5. Test if it works</h2>
+                <h4>5. Test if it works</h4>
 
                 To make sure that my settings work, I tested the whole thing. The Google Tag Manager offers a preview option. If you open your page in preview mode, you can see directly which tags are active and which are not. I alternately rejected and re-enabled my cookies and clicked around on the page to check if Google Analytics was active or inactive whenever I wanted it to be. And fortunately this worked perfectly well! :)<br><br>
 
