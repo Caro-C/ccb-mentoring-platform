@@ -656,6 +656,13 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
 /*-----------Make pages respoinsive with media-queries------------*/
 
 /* ------ viewport more than 891px ----------*/
+@media only screen and (min-width: 1440px){
+  body{
+    max-width: 1240px; /*set max width to 1250px for large screens*/
+    margin: 0 auto;
+  }
+}
+
 @media only screen and (min-width: 891px){
   .post-number-x{
     width: 40%;
