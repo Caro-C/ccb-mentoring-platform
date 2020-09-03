@@ -475,7 +475,7 @@ h5{
 }
 
 .sidebar-contact{
-  border: thin solid var(--text-light-gray);
+  border: thin solid var(--text-gold);
   overflow-wrap: break-word;
   margin-top: 3.5rem;
   padding: 1rem 1rem 0.7rem 1rem;
