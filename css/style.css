@@ -597,6 +597,10 @@ h5{
   width: 100%
 }
 
+.top-image{
+  padding-top: 0px !important;
+}
+
 .single-short-text{
   font-style: italic;
   font-size: 0.9rem;
