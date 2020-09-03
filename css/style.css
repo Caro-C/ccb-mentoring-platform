@@ -471,6 +471,7 @@ h5{
 
 #profile-pic{
   width: 100%;
+  border-radius: 50%;
 }
 
 .sidebar-contact{
