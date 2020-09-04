@@ -66,8 +66,9 @@ h2{
 }
 
 .h1-for-post{
-  font-size: 1rem;
+  font-size: 1.2rem;
   border-top-style: none;
+  text-transform: none;
 }
 
 .h2-for-post{
@@ -831,9 +832,14 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .breadcrumb-single-post{
     text-align: left;
   }
-
   .level-single-post{
     padding-bottom: 0.5;
+  }
+  .post-text{
+    font-size: 0.95rem !important;
+  }
+  .single-post-text{
+    font-size: 0.95rem !important;
   }
 
 }
@@ -860,7 +866,7 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
     font-size:2.2rem;
   }
   h2{
-    font-size: 1.1rem !important; 
+    font-size: 1.1rem !important;
     font-weight: bold !important;
   }
   .h2-for-post{
