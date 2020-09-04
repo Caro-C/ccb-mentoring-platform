@@ -865,9 +865,13 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .logo{
     font-size:2.2rem;
   }
-  h2, .h1-for-post{
+  h2{
     font-size: 1.1rem !important;
     font-weight: bold !important;
+  }
+  .h1-for-post{
+    font-size: 1.1rem !important;
+    font-weight: bold;
   }
   .h2-for-post{
     font-size: 1.2em !important;
