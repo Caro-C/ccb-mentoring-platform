@@ -861,6 +861,8 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .site-title{
     padding-top: 0.5rem;
     height: 13rem;
+    padding-left: 1.6rem;
+    padding-right: 1.6rem;
   }
   .logo{
     font-size:2.2rem;
