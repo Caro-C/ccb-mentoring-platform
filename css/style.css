@@ -766,7 +766,7 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
     font-size:2.5rem;
   }
   #slogan{
-   font-size: 0.9rem !important;
+   font-size: 0.8rem !important;
   }
   .nav-bar{
     position: relative;
@@ -877,9 +877,6 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .h2-for-post{
     font-size: 1.2em !important;
-  }
-  #slogan{
-    font-size: 0.8rem;
   }
   #page-slogan{
     font-size: 1.3rem !important;
