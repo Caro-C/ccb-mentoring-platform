@@ -105,6 +105,15 @@ h5{
   text-align: center;
 }
 
+.background-color-ressources{
+  background: #fffaf4;
+}
+
+.ressource-images{
+  width: 100%;
+  overflow: hidden;
+}
+
 .fa-clock{
   color: #9e9e9e;
 }
@@ -342,6 +351,14 @@ h5{
 
 /*-------x-----Slide Show ---------x-------*/
 
+/*--------Ressources Section--------------------*/
+.ressources{
+  width: 27% !important;
+  padding-top: 2rem !important;
+}
+/*----x----Ressources Section---------x-----------*/
+
+
 /*------------Site Content-------------------*/
 
 .site-content{
@@ -356,7 +373,7 @@ h5{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  padding-top: 2rem;
+  /*padding-top: 2rem;*/
   /*border: thick solid gray;*/
 }
 
@@ -364,7 +381,7 @@ h5{
   width: 35%;
   overflow-wrap: break-word;
   padding: 2rem;
-  margin: 0.6rem -1rem 2rem -1rem;
+  margin: 0.6rem -1rem 1rem -1rem;
   /*border: thick solid red;*/
 }
 
@@ -562,6 +579,10 @@ h5{
   padding-top: 0;
 }
 
+.ressources-wrap{
+  align-content: flex-start !important;
+}
+
 /*-------x---------Main-Pages----------x---------*/
 
 /*----------------Single-Post-Pages-------------------*/
@@ -683,17 +704,26 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
 }
 
 @media only screen and (min-width: 891px){
+  .nav-brand a{
+    margin-left: 1.8rem !important;
+  }
+}
+
+@media only screen and (min-width: 891px){
   .post-number-x{
     width: 40%;
     padding: 0.5rem;
   }
   .nav-bar{
     position: fixed;
-    width: 95%;
+    width: 92%;
     height:4rem;
   }
   .site-title{
     padding-top: 5rem;
+  }
+  .nav-brand a{
+    margin-left: 1rem;
   }
 }
 
@@ -745,8 +775,12 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .level-and-breadcrumb{
     margin-left: 9%;
   }
+  .ressources{
+    width: 25% !important;
 }
-
+.nav-brand a{
+  margin-left: 0.8rem;
+}
 /* ------ viewport less then or equal to 783px ----------*/
 @media only screen and (max-width: 783px){
   .nav-items{
@@ -824,6 +858,13 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .background-color{
     padding: 1.5rem 2rem;
+  }
+  h2{
+    font-weight: bold;
+  }
+  .ressources{
+    width: 80% !important;
+    margin-bottom: 0.5rem;
   }
 }
 
