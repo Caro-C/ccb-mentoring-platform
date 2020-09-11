@@ -106,7 +106,16 @@ h5{
 }
 
 .background-color-ressources{
-  background: #fffaf4;
+  /*background: #fffaf4;*/
+  background: #ffffff;
+  border-top: #DAA520 solid thin;
+  padding-bottom: 0;
+}
+
+.ressources-intro{
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 1rem;
 }
 
 .ressource-images{
@@ -324,8 +333,10 @@ h5{
 
 .custom-overlay h2{
   position: relative;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: white;
+  padding-left: 1.3rem;
+  padding-right: 1.3rem;
 }
 
 .content{
@@ -333,7 +344,7 @@ h5{
   top: 50%;
   left:1%;
   right: 1%;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   font-size: 0.9rem;
   font-weight:100;
   transform: translateY(-50%);
