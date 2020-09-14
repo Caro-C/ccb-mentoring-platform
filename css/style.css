@@ -108,8 +108,8 @@ h5{
 .background-color-ressources{
   /*background: #fffaf4;*/
   background: #ffffff;
-  border-top: #DAA520 solid thin;
-  padding-bottom: 0;
+  /*border-top: #DAA520 solid thin;*/
+  padding: 0;
 }
 
 .ressources-intro{
@@ -121,6 +121,10 @@ h5{
 .ressource-images{
   width: 100%;
   overflow: hidden;
+}
+
+.ressource-breadcrumb{
+  margin-left: 0% !important;
 }
 
 .fa-clock{
@@ -885,6 +889,9 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .background-color{
     padding: 1.5rem 2rem;
+  }
+  .background-color-ressources{
+    padding: 0 !important;
   }
   h2{
     font-weight: bold;
