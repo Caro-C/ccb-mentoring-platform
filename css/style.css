@@ -676,6 +676,10 @@ h5{
   color: var(--text-gold);
 }
 
+.inspiration-padding{
+  padding-bottom: 0.7rem;
+}
+
 .comments{
   font-size: 0.85rem;
   padding: 5% 7.5% 5% 7.5%;
