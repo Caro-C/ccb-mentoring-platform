@@ -571,6 +571,18 @@ h5{
 
 /*-------x------- Footer-----------x---------*/
 
+/*-------------Copyright-------------------*/
+.copyright{
+  text-align: center;
+  font-size: 0.7rem;
+  background-color: #f2f4f7;
+}
+.copyright-deco{
+    border-top: var(--text-gold) solid thin;
+    padding: 2rem;
+  }
+/*--------x-----Copyright---------x----------*/
+
 /*----------------Main-Pages-------------------*/
 .page-gold a{
   color: var(--text-gold) !important;
