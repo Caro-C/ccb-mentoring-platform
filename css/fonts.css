@@ -9,3 +9,15 @@
   font-family: HerrVonMuellerhoff;
   src: url('../fonts/HerrVonMuellerhoff-Regular.ttf');
 }
+
+/* font-family Playfair Display*/
+@font-face{
+  font-family: Playfair Display;
+  src: url('../fonts/Playfair-Display-Regular.ttf');
+}
+
+/* font-family Lato*/
+@font-face{
+  font-family: Lato;
+  src: url('../fonts/Lato.ttf');
+}

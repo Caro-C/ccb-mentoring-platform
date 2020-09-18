@@ -4,6 +4,8 @@
   --Montserrat: 'Montserrat', sans-serif;
   --HerrVonMuellerhoff: 'Herr Von Muellerhoff', cursive;
   --Caveat: 'Caveat', cursive;
+  --Playfair-Display: 'Playfair Display', serif;
+  --Lato: 'Lato', sans-serif;
   /* variables for colors*/
   --text-gray: #000000;
   --text-link: #A8A8A8;
@@ -48,7 +50,21 @@ ul{
   margin-bottom: 0 !important;
 }
 
-h1, .date{
+/*h1{
+  font-family: var(--Playfair-Display);
+  font-size: 0.8rem;
+  font-weight: normal;
+  color: var(--text-gold);
+  text-transform: uppercase;
+  border-top-style: solid;
+  border-top-width:thin;
+  border-top-color:var(--text-gold);
+  display: inline;
+  padding: 0.3rem;
+}*/
+
+.date{
+  font-family: var(--Playfair-Display);
   font-size: 0.8rem;
   font-weight: normal;
   color: var(--text-gold);
@@ -61,29 +77,36 @@ h1, .date{
 }
 
 h2{
-  font-size: 1.2rem;
+  font-family: var(--Playfair-Display);
+  font-size: 1.4rem;
   font-weight: normal;
+  margin-bottom: 0.4px;
 }
 
 .h1-for-post{
-  font-size: 1.2rem;
+  font-family: var(--Playfair-Display);
+  font-size: 1.6rem;
   border-top-style: none;
   text-transform: none;
 }
 
 .h2-for-post{
-  font-size: 1.3em;
-  font-weight: 900;
+  font-size: 1.3rem;
   text-transform: none;
+  margin-bottom: 1.5rem;
 }
 
 h4{
-  font-size: 1rem;
+  font-family: var(--Playfair-Display);
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
 }
 
 h5{
-  font-size: 0.9rem;
+  font-family: var(--Playfair-Display);
+  font-size: 1.1rem;
   color: #d6027c;
+  margin-bottom: 1rem;
 }
 
 .container{
@@ -316,6 +339,66 @@ h5{
 
 /*-----x------ Site Title --------x--------*/
 
+/*------ Animated Site Title ----------------*/
+.ccb{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 1rem;
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+}
+
+.sub-headline{
+  font-size: 2.5rem;
+  font-family: var(--HerrVonMuellerhoff);
+  color: var(--text-gold);
+  font-weight: 100;
+  letter-spacing: 2.2px;
+}
+
+.first-letter{
+  text-transform: uppercase;
+  font-size: 3.8rem;
+}
+
+.headline{
+  font-size: 1.6rem;
+  font-family: var(--Playfair-Display);
+  letter-spacing: 3px;
+  font-weight: 100;
+}
+
+.separator{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.line{
+  width: 100%;
+  max-width: 6.5rem;
+  height: 0.05rem;
+  background-color: var(--text-gold);
+  position: relative;
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
+}
+
+.asterisk{
+  font-size: 0.1rem;
+}
+
+.single-animation{
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.7rem;
+}
+
+/*---x--- Animated Site Title ---------x-------*/
+
 /*------------Slide Show ---------------->*/
 .blog-content{
   position: relative;
@@ -421,7 +504,7 @@ h5{
 
 .level{
   text-align: left;
-  font-size: 0.85rem;
+  font-size: 0.75rem;
   padding-bottom: 0.7rem;
   color: var(--text-light-gray);
 }
@@ -593,9 +676,9 @@ h5{
 }
 
 #page-slogan{
+  font-family: var(--Playfair-Display);
   margin-top: 2.2rem;
-  font-size: 1.8rem !important;
-  text-transform: uppercase;
+  font-size: 2.3rem !important;
 }
 
 .page-main-posts{
@@ -848,6 +931,9 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
     position: relative;
     display: block;
   }
+  .ccb{
+    padding-top: 5rem;
+  }
 }
 
 /* ------ viewport less then or equal to 630px ----------*/
@@ -892,9 +978,6 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .background-color-ressources{
     padding: 0 !important;
-  }
-  h2{
-    font-weight: bold;
   }
   .ressources{
     width: 80% !important;
@@ -942,19 +1025,14 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .logo{
     font-size:2.2rem;
   }
-  h2{
-    font-size: 1.1rem !important;
-    font-weight: bold !important;
-  }
   .h1-for-post{
-    font-size: 1.1rem !important;
-    font-weight: bold;
+    font-size: 1.4rem !important;
   }
   .h2-for-post{
     font-size: 1.2em !important;
   }
   #page-slogan{
-    font-size: 1.3rem !important;
+    font-size: 1.9rem !important;
   }
   .single-blog-post > div{
     width: 80% !important;
