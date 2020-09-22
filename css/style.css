@@ -40,6 +40,11 @@ ul{
   list-style-type: none;
 }
 
+.logo-container{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
 .logo{
   font-family: var(--Caveat);
   font-style: italic;
@@ -48,20 +53,20 @@ ul{
   letter-spacing: 0.2rem;
   margin: 1.5rem;
   margin-bottom: 0 !important;
+  margin-top: -0.5rem;
 }
 
-/*h1{
-  font-family: var(--Playfair-Display);
+h1{
+  letter-spacing: 2.2px;
   font-size: 0.8rem;
   font-weight: normal;
   color: var(--text-gold);
-  text-transform: uppercase;
   border-top-style: solid;
   border-top-width:thin;
   border-top-color:var(--text-gold);
   display: inline;
   padding: 0.3rem;
-}*/
+}
 
 .date{
   font-family: var(--Playfair-Display);
@@ -74,6 +79,15 @@ ul{
   border-top-color:var(--text-gold);
   display: inline;
   padding: 0.3rem;
+}
+
+.lets-have{
+  font-family: var(--Caveat);
+  font-size: 1.1rem;
+  color: var(--text-gold);
+  font-weight: normal;
+  letter-spacing: 1.5px;
+  line-height: 1rem;
 }
 
 h2{
@@ -464,6 +478,36 @@ h5{
 }
 /*----x----Ressources Section---------x-----------*/
 
+/*----------What is CoffeeCodebreak Section-----------*/
+.what-is-ccb{
+  width: 80%;
+  position: center;
+}
+
+.global-headline{
+  text-align: center;
+  margin-top: 4rem;
+  line-height: 1.5rem;
+}
+
+.ccb-info{
+  text-align: center;
+}
+
+.ccb-description{
+  margin-bottom: 2rem;
+}
+
+.ccb-description p{
+  font-size: 0.85rem;
+  padding-left: 10rem;
+}
+
+.padding-right{
+  padding-right: 5rem;
+}
+
+/*-----x-----What is CoffeeCodebreak Section------x-----*/
 
 /*------------Site Content-------------------*/
 
@@ -876,7 +920,7 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .site-title{
     padding-top: 5rem;
-    height: 15rem;
+    height: 11rem;
   }
   .about-page{
     height: 25% !important;
@@ -928,7 +972,7 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .site-title{
     padding-top: 1.7rem;
-    height: 14rem;
+    height: 11rem;
   }
   .single-title{
     height: 8rem;
@@ -1025,7 +1069,7 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .site-title{
     padding-top: 0.5rem;
-    height: 13rem;
+    height: 10rem;
     padding-left: 1.6rem;
     padding-right: 1.6rem;
   }
