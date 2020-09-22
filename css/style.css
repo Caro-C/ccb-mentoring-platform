@@ -83,7 +83,7 @@ h1{
 
 .lets-have{
   font-family: var(--Caveat);
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   color: var(--text-gold);
   font-weight: normal;
   letter-spacing: 1.5px;
@@ -104,6 +104,7 @@ h2{
   text-transform: none;
   margin-bottom: 0;
   font-weight: 500;
+  letter-spacing: normal;
 }
 
 .h2-for-post{
@@ -355,7 +356,7 @@ h5{
 
 /*-----x------ Site Title --------x--------*/
 
-/*------ Animated Site Title ----------------*/
+/*------ Animated Site Title
 .ccb{
   width: 100%;
   display: flex;
@@ -419,7 +420,7 @@ h5{
   padding-top: 0.3rem;
 }
 
-/*---x--- Animated Site Title ---------x-------*/
+Animated Site Title ---------x-------*/
 
 /*------------Slide Show ---------------->*/
 .blog-content{
@@ -457,6 +458,10 @@ h5{
   font-size: 0.9rem;
   font-weight:100;
   transform: translateY(-50%);
+}
+
+.content > h2{
+  font-family: var(--Montserrat);
 }
 
 .custom-overlay h3{
@@ -799,6 +804,10 @@ h5{
 .breadcrumb{
   font-size: 0.8rem;
   display: inline-block;
+}
+
+.breadcrumb-bottom{
+  text-align: center;
 }
 
 .level-single-post{
