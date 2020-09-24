@@ -16,11 +16,11 @@ $(document).ready(function(){
             autoplay: false
         },
         630:{
-            items:2,
+            items:1,
             autoplay: false
         },
         890:{
-            items:3,
+            items:1,
             loop:true,
             autoplay: false
         }
