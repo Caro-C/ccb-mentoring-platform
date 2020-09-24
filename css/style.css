@@ -69,8 +69,8 @@ h1{
 }
 
 .date{
-  font-family: var(--Playfair-Display);
-  font-size: 0.8rem;
+  font-family: var(--Montserrat);
+  font-size: 0.7rem;
   font-weight: normal;
   color: var(--text-gold);
   text-transform: uppercase;
@@ -91,15 +91,15 @@ h1{
 }
 
 h2{
-  font-family: var(--Playfair-Display);
-  font-size: 1.4rem;
+  font-family: var(--Montserrat);
+  font-size: 1.1rem;
   font-weight: normal;
   margin-bottom: 0.4px;
 }
 
 .h1-for-post{
-  font-family: var(--Playfair-Display);
-  font-size: 1.6rem;
+  font-family: var(--Montserrat);
+  font-size: 1.2rem;
   border-top-style: none;
   text-transform: none;
   margin-bottom: 0;
@@ -108,20 +108,21 @@ h2{
 }
 
 .h2-for-post{
-  font-size: 1.3rem;
+  font-size: 1.1rem;
+  font-weight: bold;
   text-transform: none;
   margin-bottom: 1.5rem;
 }
 
 h4{
-  font-family: var(--Playfair-Display);
-  font-size: 1.2rem;
+  font-family: var(--Montserrat);
+  font-size: 1rem;
   margin-bottom: 1rem;
 }
 
 h5{
-  font-family: var(--Playfair-Display);
-  font-size: 1.1rem;
+  font-family: var(--Montserrat);
+  font-size: 1rem;
   color: #d6027c;
   margin-bottom: 1rem;
 }
@@ -485,34 +486,45 @@ Animated Site Title ---------x-------*/
 
 /*----------What is CoffeeCodebreak Section-----------*/
 .what-is-ccb{
-  width: 80%;
-  position: center;
-}
-
-.global-headline{
-  text-align: center;
-  margin-top: 4rem;
-  line-height: 1.5rem;
-}
-
-.ccb-info{
-  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .ccb-description{
-  margin-bottom: 2rem;
-}
-
-.ccb-description p{
+  width: 30rem;
+  padding: 3.5rem 1rem 5rem 3rem;
+  text-align: center;
   font-size: 0.85rem;
-  padding-left: 10rem;
 }
 
-.padding-right{
-  padding-right: 5rem;
+.ccb-description-heading{
+  font-family: var(--Caveat);
+  font-size: 2.1rem;
+}
+
+.ccb-img{
+  padding: 4rem 3rem 5rem 1rem;
+}
+
+.ccb-part{
+  margin-top: 1rem;
 }
 
 /*-----x-----What is CoffeeCodebreak Section------x-----*/
+
+/*------------Mentor Section -------------------*/
+.mentor-img{
+  border-radius: 50%;
+}
+/*-----x-------Mentor Section ---------x----------*/
+
+/*---------Blog Heading----------------------*/
+.blog-heading{
+  padding-bottom: 0.5rem !important;
+}
+/*---------End of Blog Heading----------------------*/
 
 /*------------Site Content-------------------*/
 
@@ -955,6 +967,20 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
 .nav-brand a{
   margin-left: 0.8rem;
 }
+
+/* ------ viewport less then or equal to 862px ----------*/
+@media only screen and (max-width: 862px){
+  .ccb-description{
+    width: 80%;
+    padding: 2rem 2rem 1rem 2rem;
+    text-align: center;
+    font-size: 0.85rem;
+  }
+  .ccb-img{
+    padding: 1rem 2rem 3rem 2rem;
+  }
+}
+
 /* ------ viewport less then or equal to 783px ----------*/
 @media only screen and (max-width: 783px){
   .nav-items{
@@ -1086,10 +1112,10 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
     font-size:2.2rem;
   }
   .h1-for-post{
-    font-size: 1.4rem !important;
+    font-size: 1rem !important;
   }
   .h2-for-post{
-    font-size: 1.2em !important;
+    font-size: 1.1em !important;
   }
   #page-slogan{
     font-size: 1.9rem !important;
