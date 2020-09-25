@@ -436,10 +436,13 @@ Animated Site Title ---------x-------*/
   right: 0;
   text-align: center;
   /*background-color: rgba(255,255,255,0.7);*/
-  background-color: rgba(165, 165, 165, 0.5);
+  /*background-color: rgba(165, 165, 165, 0.5);*/
   opacity: 1;
   transition: all 400ms ease-in-out;
   height: 100%;
+}
+.custom-overlay:hover{
+  background-color: rgb(0 0 0 / 30%);
 }
 
 .custom-overlay h2{
@@ -462,7 +465,23 @@ Animated Site Title ---------x-------*/
 }
 
 .content > h2{
-  font-family: var(--Montserrat);
+  font-family: var(--Caveat);
+  font-size: 4rem;
+  font-style: italic;
+  letter-spacing: 2.5px;
+  line-height: normal;
+  margin-top: 0;
+}
+
+.big-letter{
+  font-size: 8rem;
+}
+
+.overlay-slogan{
+  font-size: 1rem;
+  color: white;
+  font-weight: bold;
+  border-top-color: white;
 }
 
 .custom-overlay h3{
@@ -493,15 +512,15 @@ Animated Site Title ---------x-------*/
 }
 
 .ccb-description{
-  width: 40rem;
-  padding: 3.5rem 1.5rem 5rem 3rem;
+  width: 45rem;
+  padding: 3.5rem 2.5rem 5rem 3rem;
   text-align: center;
   font-size: 0.85rem;
 }
 
 .ccb-description-heading{
   font-family: var(--Caveat);
-  font-size: 2.1rem;
+  font-size: 2.3rem;
   margin-top: -0.5rem;
 }
 
@@ -511,6 +530,15 @@ Animated Site Title ---------x-------*/
 
 .ccb-part{
   margin-top: 1rem;
+}
+
+.gold{
+  color: var(--text-gold);
+}
+
+.golden-frame{
+  padding-bottom: 0.5rem;
+  font-size: 1rem;
 }
 
 /*-----x-----What is CoffeeCodebreak Section------x-----*/
@@ -523,7 +551,7 @@ Animated Site Title ---------x-------*/
 
 /*---------Blog Heading----------------------*/
 .blog-heading{
-  padding-bottom: 0.5rem !important;
+  margin-bottom: 1rem !important;
 }
 /*---------End of Blog Heading----------------------*/
 
@@ -964,21 +992,29 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .ressources{
     width: 25% !important;
-}
-.nav-brand a{
-  margin-left: 0.8rem;
-}
-
+  }
+  .nav-brand a{
+    margin-left: 0.8rem;
+  }
+  .big-letter{
+    font-size: 5rem;
+  }
+  .content > h2{
+    font-size: 3.5rem;
+  }
 /* ------ viewport less then or equal to 862px ----------*/
 @media only screen and (max-width: 862px){
   .ccb-description{
     width: 80%;
-    padding: 2rem 2rem 1rem 2rem;
+    padding: 2rem 2rem 3.5rem 2rem;
     text-align: center;
     font-size: 0.85rem;
   }
   .ccb-img{
-    padding: 1rem 2rem 3rem 2rem;
+    padding: 1rem 2rem 3.5rem 2rem;
+  }
+  .what-is-ccb-description{
+    padding-bottom: 3.5rem;
   }
 }
 
@@ -1140,5 +1176,8 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   #intro, .sidebar-contact, .side-bar-collection{
     font-size: 0.95rem;
+  }
+  .ccb-description-heading{
+    line-height: normal;
   }
 }
