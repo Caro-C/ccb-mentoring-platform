@@ -541,11 +541,17 @@ Animated Site Title ---------x-------*/
   font-size: 1rem;
 }
 
-.highlighted-box{
-  background-color: #f2f4f7;
-  padding: 2rem;
+.network{
+  width: 30%;
 }
 
+.ccb-network{
+  margin-top: -2.5rem;
+}
+
+.network-heading{
+  margin-top: 4rem;
+}
 /*-----x-----What is CoffeeCodebreak Section------x-----*/
 
 /*------------Mentor Section -------------------*/
