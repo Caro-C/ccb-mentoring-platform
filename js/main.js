@@ -10,6 +10,9 @@ $(document).ready(function(){
     loop:true,
     margin:10,
     responsiveClass:true,
+    autoplaySpeed: 1500,
+    autoplayTimeout: 5000,
+    smartSpeed: 1500,
     responsive:{
         0:{
             items:1,
@@ -34,4 +37,21 @@ $('.nav-bar a,.home,.move-up').click(function(){
 });
 
 
+});
+
+//Animations with Scroll scrollreveal
+window.sr = ScrollReveal();
+
+sr.reveal('.animate-left',{
+  origin: 'left',
+  duration: 1500,
+  distance: '25rem',
+  delay: 200
+});
+
+sr.reveal('.animate-right',{
+  origin: 'right',
+  duration: 1500,
+  distance: '25rem',
+  delay: 200
 });
