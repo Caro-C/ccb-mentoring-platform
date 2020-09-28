@@ -539,7 +539,7 @@ Animated Site Title ---------x-------*/
 
 .golden-frame{
   padding-bottom: 0.5rem;
-  font-size: 1rem;
+  font-size: 1.1rem;
 }
 
 .network{
@@ -566,6 +566,22 @@ Animated Site Title ---------x-------*/
   border-top: thin solid;
   padding-top: 1.8rem;
   padding-bottom: 2rem;
+}
+
+.mentoring-sub-heading{
+  font-family: var(--Caveat);
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  color: var(--text-gold);
+  font-weight: bold;
+}
+
+.metoring-sub-heading-outter{
+  font-size: 1rem;
+}
+
+.for-whom{
+  padding-bottom: 3rem;
 }
 /*-----x-----What is CoffeeCodebreak Section------x-----*/
 
