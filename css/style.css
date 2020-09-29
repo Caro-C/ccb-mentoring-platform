@@ -546,6 +546,13 @@ Animated Site Title ---------x-------*/
   width: 30%;
 }
 
+.network-tile{
+  width: 30%;
+  padding: 2rem 1.5rem;
+  margin: 3.5rem 2.5rem 5rem 3rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
 .ccb-network{
   margin-top: -2.5rem;
 }
@@ -570,7 +577,7 @@ Animated Site Title ---------x-------*/
 
 .mentoring-sub-heading{
   font-family: var(--Caveat);
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   letter-spacing: 1.5px;
   color: var(--text-gold);
   font-weight: bold;
@@ -586,9 +593,26 @@ Animated Site Title ---------x-------*/
 }
 
 .fa-circle{
-  font-size: 0.07rem;
+  font-size: 0.05rem;
   color: var(--text-gold);
 }
+
+.fa-users{
+  font-size: 2.1rem;
+}
+
+.fa-envelope-open{
+  font-size: 2.1rem;
+ }
+
+ .fa-user-check{
+   font-size: 2.1rem;
+ }
+
+ .coffee-big{
+   font-size: 2.1rem !important;
+   color: black !important;
+ }
 
 .for-whom{
   padding-top: 3.5rem;
