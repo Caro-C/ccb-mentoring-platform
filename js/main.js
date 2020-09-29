@@ -46,18 +46,18 @@ sr.reveal('.animate-left',{
   origin: 'left',
   duration: 1500,
   distance: '25rem',
-  delay: 170
+  delay: 200
 });
 
 sr.reveal('.animate-right',{
   origin: 'right',
   duration: 1500,
   distance: '25rem',
-  delay: 170
+  delay: 200
 });
 
 sr.reveal('.animate-center',{
   duration: 1500,
   distance: '25rem',
-  delay: 170
+  delay: 200
 });

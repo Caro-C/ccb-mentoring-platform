@@ -580,6 +580,16 @@ Animated Site Title ---------x-------*/
   font-size: 1rem;
 }
 
+.fa-coffee{
+  font-size: 1.1rem;
+  color: var(--text-gold);
+}
+
+.fa-circle{
+  font-size: 0.07rem;
+  color: var(--text-gold);
+}
+
 .for-whom{
   padding-top: 3.5rem;
   padding-bottom: 3.5rem;
