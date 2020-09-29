@@ -12,7 +12,7 @@ $(document).ready(function(){
     responsiveClass:true,
     autoplaySpeed: 1500,
     autoplayTimeout: 5000,
-    smartSpeed: 1500,
+    smartSpeed: 1000,
     responsive:{
         0:{
             items:1,
