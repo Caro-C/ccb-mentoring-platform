@@ -512,7 +512,7 @@ Animated Site Title ---------x-------*/
 }
 
 .ccb-description{
-  width: 60rem;
+  width: 50rem;
   padding: 3.5rem 2.5rem 5rem 3rem;
   text-align: center;
   font-size: 0.85rem;
@@ -539,7 +539,7 @@ Animated Site Title ---------x-------*/
 
 .golden-frame{
   padding-bottom: 0.5rem;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
 }
 
 .network{
@@ -559,12 +559,12 @@ Animated Site Title ---------x-------*/
 }
 
 .how-does-it-work{
-  padding-top: 0;
+  padding-top: 4.5rem;
 }
 
 .border-top{
-  border-top: thin solid;
-  padding-top: 1.8rem;
+  /*border-top: thin solid;*/
+  padding-top: 3rem;
   padding-bottom: 2rem;
 }
 
@@ -581,7 +581,12 @@ Animated Site Title ---------x-------*/
 }
 
 .for-whom{
-  padding-bottom: 3rem;
+  padding-top: 3.5rem;
+  padding-bottom: 3.5rem;
+}
+
+.container-color{
+  background-color: #fafbfc;
 }
 /*-----x-----What is CoffeeCodebreak Section------x-----*/
 
