@@ -548,8 +548,8 @@ Animated Site Title ---------x-------*/
 
 .network-tile{
   width: 30%;
-  padding: 2rem 1.5rem;
-  margin: 3.5rem 2.5rem 5rem 3rem;
+  padding: 2.1rem 1.5rem 3.6rem 1.5rem;
+  margin: 3.9rem 2.5rem 6.3rem 3rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
@@ -558,7 +558,7 @@ Animated Site Title ---------x-------*/
 }
 
 .network-heading{
-  margin-top: 4rem;
+  margin-top: 3.7rem;
 }
 
 .mission{
@@ -567,6 +567,7 @@ Animated Site Title ---------x-------*/
 
 .how-does-it-work{
   padding-top: 4.5rem;
+  padding-bottom: 4.8rem;
 }
 
 .border-top{
@@ -598,29 +599,42 @@ Animated Site Title ---------x-------*/
 }
 
 .fa-users{
-  font-size: 2.1rem;
+  font-size: 2rem;
 }
 
 .fa-envelope-open{
-  font-size: 2.1rem;
+  font-size: 2rem;
  }
 
  .fa-user-check{
-   font-size: 2.1rem;
+   font-size: 2rem;
  }
 
  .coffee-big{
-   font-size: 2.1rem !important;
+   font-size: 2rem !important;
    color: black !important;
  }
 
 .for-whom{
-  padding-top: 3.5rem;
+  padding-top: 3.2rem;
   padding-bottom: 3.5rem;
 }
 
 .container-color{
   background-color: #fafbfc;
+}
+
+.mentoring-button{
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 0.8rem 2.5rem;
+  border-radius: 18px;
+  background-color: #f2f4f7;
+}
+
+.mentoring-button:hover{
+  color: var(--text-gold);
+  background-color: #edeff2;
 }
 /*-----x-----What is CoffeeCodebreak Section------x-----*/
 
