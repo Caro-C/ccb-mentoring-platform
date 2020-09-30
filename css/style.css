@@ -466,7 +466,7 @@ Animated Site Title ---------x-------*/
 
 .content > h2{
   font-family: var(--Caveat);
-  font-size: 4rem;
+  font-size: 3.5rem;
   font-style: italic;
   letter-spacing: 2.5px;
   line-height: normal;
@@ -642,13 +642,14 @@ Animated Site Title ---------x-------*/
   border-color: var(--text-gold);*/
   font-size: 1rem;
   padding-top: 0.5rem;
+  padding-bottom: 1rem;
 }
 
 .mission-slogan-bottom:before{
   content: "";
   position: absolute;
-  width: 25%;
-  left: 37.5%;
+  width: 20%;
+  left: 39.5%;
   border-bottom: thin solid var(--text-gold);
 }
 /*-----x-----What is CoffeeCodebreak Section------x-----*/
@@ -1111,7 +1112,7 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
     font-size: 5rem;
   }
   .content > h2{
-    font-size: 3.5rem;
+    font-size: 3.2rem;
   }
 /* ------ viewport less then or equal to 862px ----------*/
 @media only screen and (max-width: 862px){
@@ -1126,6 +1127,23 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .what-is-ccb-description{
     padding-bottom: 3.5rem;
+  }
+  .mission{
+    margin-top: 1.6rem;
+    padding-bottom: 0rem;
+  }
+  .how-does-it-work{
+    padding-top: 3.5rem;
+    padding-bottom: 3.4rem;
+  }
+  .who-tile-left{
+    padding-bottom: 1.5rem;
+  }
+  .tile-right{
+    margin-top: 0;
+  }
+  .tile-left{
+    margin-bottom: 2.5rem;
   }
 }
 
