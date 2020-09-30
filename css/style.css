@@ -599,19 +599,19 @@ Animated Site Title ---------x-------*/
 }
 
 .fa-users{
-  font-size: 1.9rem;
+  font-size: 1.8rem;
 }
 
 .fa-envelope-open{
-  font-size: 1.9rem;
+  font-size: 1.8rem;
  }
 
  .fa-user-check{
-   font-size: 1.9rem;
+   font-size: 1.8rem;
  }
 
  .coffee-big{
-   font-size: 1.9rem !important;
+   font-size: 1.8rem !important;
    color: black !important;
  }
 
@@ -635,6 +635,21 @@ Animated Site Title ---------x-------*/
 .mentoring-button:hover{
   color: var(--text-gold);
   background-color: #edeff2;
+}
+
+.mission-slogan{
+  /*border-style: double;
+  border-color: var(--text-gold);*/
+  font-size: 1rem;
+  padding-top: 0.5rem;
+}
+
+.mission-slogan-bottom:before{
+  content: "";
+  position: absolute;
+  width: 25%;
+  left: 37.5%;
+  border-bottom: thin solid var(--text-gold);
 }
 /*-----x-----What is CoffeeCodebreak Section------x-----*/
 
