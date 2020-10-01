@@ -838,6 +838,103 @@ Animated Site Title ---------x-------*/
 }
 /*-----x-------Site Content---------x----------*/
 
+/*------------Mentor Collection Page---------------*/
+.our-mentors-heading{
+  text-align: center;
+}
+.our-mentors-container{
+  padding: 3.5rem;
+}
+.our-mentors-grid{
+  display: grid;
+  grid-gap: 3.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+.mentor-tile{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  text-align: center;
+}
+.mentor-tile:hover{
+  opacity: 0.77;
+  transition: all 300ms ease-in-out;
+}
+.mentor-page-img{
+  border-radius: 50%;
+  padding-top: 1.5rem;
+  width: 75%;
+}
+.mentor-name{
+  padding-top: 0.5rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  padding-bottom: 0.8rem;
+}
+.mentor-home{
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: normal;
+}
+.mentor-prof{
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding-bottom: 0.8rem;
+}
+.mentor-topics{
+  font-size: 0.75rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.mentor-uni{
+  font-size: 0.75rem;
+  font-style: italic;
+}
+.mentor-exp{
+  font-size: 0.75rem;
+  font-style: italic;
+}
+.mentor-lang{
+  font-size: 0.75rem;
+  padding-bottom: 1rem;
+  font-style: italic;
+}
+.mentor-card-heart{
+  font-family: var(--Caveat);
+  font-size: 1.5rem;
+  padding-bottom: 1rem;
+}
+.become-mentee{
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 0.8rem 2.5rem;
+  margin-left: 40%;
+  margin-right: 40%;
+  border-radius: 20px;
+  background-color: #f2f4f7;
+}
+.become-mentor{
+  text-align: center;
+  font-weight: bold;
+  font-size: 0.9rem;
+  padding: 0.8rem 2.5rem;
+  margin-left: 40%;
+  margin-right: 40%;
+  border-radius: 20px;
+  background-color: #f2f4f7;
+}
+.become-mentee:hover{
+  color: var(--text-gold);
+  background-color: #edeff2;
+}
+.become-mentor:hover{
+  color: var(--text-gold);
+  background-color: #edeff2;
+}
+
+/*------x------Mentor Collection Page-------x--------*/
+
 /*------x----- Main Content ------x----------*/
 
 /*-------------- Footer--------------------*/
