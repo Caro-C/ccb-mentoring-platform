@@ -841,6 +841,7 @@ Animated Site Title ---------x-------*/
 /*------------Mentor Collection Page---------------*/
 .our-mentors-heading{
   text-align: center;
+  padding-bottom: 1rem;
 }
 .our-mentors-container{
   padding: 3.5rem;
