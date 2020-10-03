@@ -283,6 +283,10 @@ h5{
 .social i{
   padding: 0.2rem;
 }
+
+.fa-globe{
+  font-size: 0.8rem;
+}
 /*-------x------ navigation bar ------x-------*/
 
 /*---------------Language-Dropdown--------------*/
