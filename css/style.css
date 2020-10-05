@@ -890,16 +890,22 @@ Animated Site Title ---------x-------*/
   font-size: 1.3rem;
   font-weight: bold;
   padding-bottom: 0.8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .mentor-home{
   font-size: 0.75rem;
   font-style: italic;
   font-weight: normal;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .mentor-prof{
   font-size: 0.9rem;
   font-weight: bold;
   padding-bottom: 0.8rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .mentor-topics{
   font-size: 0.75rem;
@@ -909,50 +915,51 @@ Animated Site Title ---------x-------*/
 .mentor-uni{
   font-size: 0.75rem;
   font-style: italic;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .mentor-exp{
   font-size: 0.75rem;
   font-style: italic;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .mentor-lang{
   font-size: 0.75rem;
   padding-bottom: 1rem;
   font-style: italic;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 .mentor-card-heart{
   font-family: var(--Caveat);
   font-size: 1.5rem;
   padding-bottom: 1rem;
 }
-.become-mentee{
+
+.become-mentee-button-top{
   text-align: center;
-  margin-top: 2rem;
-  margin-bottom: 1.5rem;
+  margin-top: 2.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.become-mentee-button-bottom{
+  text-align: center;
+}
+
+.style-mentoring-button{
+  font-family: var(--Montserrat);
+  border: none;
   font-weight: bold;
   font-size: 0.9rem;
-  padding: 0.8rem 2.5rem;
-  margin-left: 40%;
-  margin-right: 40%;
   border-radius: 20px;
   background-color: #f2f4f7;
+  padding: 1.1rem 2.8rem;
+  width: 255px;
 }
-.become-mentor{
-  text-align: center;
-  font-weight: bold;
-  font-size: 0.9rem;
-  padding: 0.8rem 2.5rem;
-  margin-left: 40%;
-  margin-right: 40%;
-  border-radius: 20px;
-  background-color: #f2f4f7;
-}
-.become-mentee:hover{
+
+.style-mentoring-button:hover{
   color: var(--text-gold);
-  background-color: #edeff2;
-}
-.become-mentor:hover{
-  color: var(--text-gold);
-  background-color: #edeff2;
 }
 
 /*------x------Mentor Collection Page-------x--------*/
@@ -1054,7 +1061,6 @@ footer{
   width: 100%;
   font-family: var(--Montserrat);
   background: #f2f4f7;
-  padding-left: 10px;
   border: 1px solid #222222;
 }
 
@@ -1075,14 +1081,15 @@ footer{
   width: 80px;
   border: none;
   outline: none;
-  background: white;
+  background: #81868c;
+  color: white;
   font-weight: bold;
+  border-radius: 20px;
   transition: .3s;
 }
 
 .center-footer form .footer-email-button button:hover{
-  color: white;
-  background: black;
+  background: #686d73;
 }
 
 .footer-bottom center{
@@ -1553,5 +1560,8 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .ccb-description-heading{
     line-height: normal;
+  }
+  .our-mentors-grid{
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
 }
