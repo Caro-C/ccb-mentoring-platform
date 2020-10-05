@@ -946,7 +946,7 @@ Animated Site Title ---------x-------*/
 
 /*------x----- Main Content ------x----------*/
 
-/*-------------- Footer--------------------*/
+/*-------------- Footer alt--------------------
 .footer{
   height: 100%;
   background: #f2f4f7;
@@ -957,13 +957,14 @@ Animated Site Title ---------x-------*/
    grid-template-columns: repeat(4, 1fr);
  }
 
- .footer-container > div{
+ .footer-flexbox{
    display: flex;
    flex-wrap: wrap;
    padding: 2.5rem;
    text-transform: uppercase;
    font-size: 0.7rem;
    justify-content: center;
+   text-align: center;
  }
 
  .move-up{
@@ -972,7 +973,124 @@ Animated Site Title ---------x-------*/
    cursor: pointer;
  }
 
-/*-------x------- Footer-----------x---------*/
+Footer alt-----------x---------*/
+
+/*--------------Footer---------------------*/
+footer{
+  bottom: 0px;
+  width: 100%;
+  background: #f2f4f7;
+}
+
+.footer-content{
+  display: flex;
+  font-size: 0.8rem;
+}
+
+.box{
+  margin-top: 3rem;
+}
+
+.footer-content .box{
+  flex-basis: 50%;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.box .footer-heading{
+  font-size: 0.75rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding-bottom: 1.5rem;
+}
+
+.box .footer-bullets{
+  margin: 20px 0 0 0;
+  position: relative;
+  line-height: 1.7rem;
+}
+
+.box .footer-bullets:before{
+  position: absolute;
+  content: '';
+  top: -10px;
+  height: 2px;
+  width: 100%;
+  background: #f2f4f7;
+}
+
+.box .footer-bullets:after{
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 2px;
+  background: #f2f4f7;
+  top: 10px;
+
+}
+
+.center-footer form .footer-message-text{
+  margin-bottom: 2px;
+}
+
+.center-footer form .footer-email-message{
+  margin-top: 10px;
+}
+
+.center-footer form input, .center-footer form textarea{
+  width: 100%;
+  font-family: var(--Montserrat);
+  background: #f2f4f7;
+  padding-left: 10px;
+  border: 1px solid #222222;
+}
+
+.center-footer form input:focus, .center-footer form textarea:focus{
+  outline-color: var(--text-gold);
+}
+
+.center-footer form input{
+  height: 35px;
+}
+
+.center-footer form .footer-email-button{
+  margin-top: 10px;
+}
+
+.center-footer form .footer-email-button button{
+  height: 40px;
+  width: 80px;
+  border: none;
+  outline: none;
+  background: white;
+  font-weight: bold;
+  transition: .3s;
+}
+
+.center-footer form .footer-email-button button:hover{
+  background: black;
+  color: white;
+}
+
+.footer-bottom center{
+  padding: 3rem 1rem 1.5rem 1rem;
+  font-size: 0.7rem;
+  background: #f2f4f7;
+}
+
+.linkedin-bottom{
+  font-size: 1rem;
+  padding-bottom: 3.5rem;
+}
+
+.linkedin-bottom:hover{
+  color: var(--text-gold);
+}
+
+.footer-links:hover{
+  color: var(--text-gold);
+}
+/*---------x---------Footer--------x--------*/
 
 /*-------------Copyright-------------------*/
 .copyright{
@@ -1340,6 +1458,10 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .ressources{
     width: 80% !important;
     margin-bottom: 0.5rem;
+  }
+  .footer-content{
+    flex-wrap: wrap;
+    flex-direction: column;
   }
 }
 
