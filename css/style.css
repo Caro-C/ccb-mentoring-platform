@@ -1103,6 +1103,10 @@ footer{
 .footer-links:hover{
   color: var(--text-gold);
 }
+
+.fa-chevron-circle-up{
+  font-size: 1rem;
+}
 /*---------x---------Footer--------x--------*/
 
 /*-------------Copyright-------------------*/
