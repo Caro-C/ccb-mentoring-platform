@@ -917,6 +917,7 @@ Animated Site Title ---------x-------*/
   font-style: italic;
   padding-left: 1rem;
   padding-right: 1rem;
+  padding-bottom: 1rem;
 }
 .mentor-exp{
   font-size: 0.75rem;
@@ -1089,7 +1090,7 @@ footer{
 }
 
 .center-footer form .footer-email-button button:hover{
-  background: #5a5e63;
+  background: #54575c;
 }
 
 .footer-bottom center{
