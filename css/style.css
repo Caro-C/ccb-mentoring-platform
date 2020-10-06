@@ -231,7 +231,7 @@ h5{
 }
 
 .collapse{
-  height: 40rem;
+  height: 28rem;
 }
 
 .nav-items{
@@ -1404,6 +1404,9 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .tile-left{
     margin-bottom: 2.5rem;
+  }
+  .about-img{
+    padding-top: 3rem;
   }
 }
 
