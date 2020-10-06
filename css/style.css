@@ -965,6 +965,17 @@ Animated Site Title ---------x-------*/
 
 /*------x------Mentor Collection Page-------x--------*/
 
+/*------------About Page---------------*/
+
+.about-img{
+  text-align: center;
+  padding-bottom: 0;
+  padding-top: 5rem;
+  width: 100%;
+}
+
+/*------x------About Page--------x-------*/
+
 /*------x----- Main Content ------x----------*/
 
 /*-------------- Footer alt--------------------
@@ -1487,6 +1498,9 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .footer-content{
     flex-wrap: wrap;
     flex-direction: column;
+  }
+  .about-img-2{
+    width: 80%;
   }
 }
 
