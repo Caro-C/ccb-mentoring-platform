@@ -974,6 +974,7 @@ Animated Site Title ---------x-------*/
   color: var(--text-gold);
 }
 
+
 /*------x------Mentor Collection Page-------x--------*/
 
 /*------------About Page---------------*/
@@ -1429,6 +1430,9 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .about-img{
     padding-top: 3rem;
   }
+  .bracelet{
+    padding-top: 2.5rem !important;
+  }
 }
 
 /* ------ viewport less then or equal to 783px ----------*/
@@ -1614,6 +1618,7 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .bracelet-style{
     padding-bottom: 1.5rem;
+    margin-top: -2rem;
   }
   .our-mentors-grid{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -1623,5 +1628,8 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .overlay-slogan{
     font-size: 0.7rem;
+  }
+  .bracelet{
+    padding-top: 2.1rem !important;
   }
 }
