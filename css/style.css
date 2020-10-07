@@ -1606,9 +1606,9 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .ccb-description-heading{
     line-height: normal;
-    font-size: 1.7rem;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    font-size: 1.9rem;
+    padding-left: 1.8rem;
+    padding-right: 1.8rem;
   }
   .bracelet-style{
     padding-bottom: 1.5rem;
