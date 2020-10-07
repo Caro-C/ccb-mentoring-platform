@@ -678,6 +678,8 @@ Animated Site Title ---------x-------*/
 
 .mentor-img{
     border-radius: 50%;
+    margin-top: -1rem;
+    margin-bottom: 3.2rem;
 }
 /*-----x-----What is CoffeeCodebreak Section------x-----*/
 
@@ -970,8 +972,18 @@ Animated Site Title ---------x-------*/
 .about-img{
   text-align: center;
   padding-bottom: 0;
-  padding-top: 5rem;
+  padding-top: 3.5rem;
   width: 100%;
+}
+
+.about-me{
+  font-family: var(--Caveat);
+  font-size: 1.8rem;
+}
+
+.about-width{
+  width: 50%;
+  padding-bottom: 0;
 }
 
 /*------x------About Page--------x-------*/
