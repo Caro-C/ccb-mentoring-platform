@@ -887,6 +887,10 @@ Animated Site Title ---------x-------*/
   padding-top: 1.5rem;
   width: 75%;
 }
+.mentor-page-img:hover{
+  opacity: 0.77;
+  transition: all 300ms ease-in-out;
+}
 .mentor-name{
   padding-top: 0.5rem;
   font-size: 1.3rem;
