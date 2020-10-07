@@ -582,6 +582,9 @@ Animated Site Title ---------x-------*/
   /*border-top: thin solid;*/
   padding-top: 3rem;
   padding-bottom: 2rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  text-align: center;
 }
 
 .mentoring-sub-heading{
@@ -1537,6 +1540,15 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .single-post-text{
     font-size: 0.95rem !important;
   }
+  .golden-frame{
+    font-size: 1rem;
+  }
+  .metoring-sub-heading-outter{
+    font-size: 0.8rem;
+  }
+  .about-img-2{
+    width: 95%;
+  }
 
 }
 
@@ -1594,8 +1606,17 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .ccb-description-heading{
     line-height: normal;
+    font-size: 1.7rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .bracelet-style{
+    padding-bottom: 1.5rem;
   }
   .our-mentors-grid{
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .who-tile-left{
+    padding-bottom: 0;
   }
 }
