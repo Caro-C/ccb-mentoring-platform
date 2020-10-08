@@ -973,6 +973,9 @@ Animated Site Title ---------x-------*/
 .style-mentoring-button:hover{
   color: var(--text-gold);
 }
+.style-mentoring-button:focus{
+  outline: none;
+}
 
 
 /*------x------Mentor Collection Page-------x--------*/
