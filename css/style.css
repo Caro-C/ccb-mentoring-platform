@@ -1719,4 +1719,7 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
     font-size: 0.7rem;
     padding: 0.7rem 1.8rem;
   }
+  .form-container header{
+    font-size: 1.1rem;
+  }
 }
