@@ -1070,6 +1070,9 @@ Animated Site Title ---------x-------*/
 .form-outer input:focus{
   outline-color: var(--text-gold);
 }
+.form-outer button:focus{
+  outline: none;
+}
 .surname{
   margin-bottom: 2.3rem !important;
 }
