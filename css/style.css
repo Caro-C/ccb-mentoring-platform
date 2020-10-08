@@ -1073,6 +1073,10 @@ Animated Site Title ---------x-------*/
 .surname{
   margin-bottom: 2.3rem !important;
 }
+.hint{
+  font-size: 0.65rem;
+  padding: 1.5rem 2.5rem 0rem 2.5rem;
+}
 /*------x------Forms----------x--------*/
 
 /*------x----- Main Content ------x----------*/
