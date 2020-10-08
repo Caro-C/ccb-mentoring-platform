@@ -1003,157 +1003,72 @@ Animated Site Title ---------x-------*/
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 100vh;
 }
 .form-container{
-  width: 330px;
+  width: 40%;
   background: #fff;
   border-radius: 5px;
+  padding: 3.5rem 1.7rem 2.5rem 1.7rem;
   text-align: center;
-  padding: 50px 35px 10px 35px;
-  background: pink;
+  background: #f2f4f7;
 }
 .form-container header{
-  font-size: 25px;
+  font-size: 1.3rem;
   font-weight: 600;
-  margin: 0 0 30px 0;
+  margin: 0 0 2rem 0;
+  padding-bottom: 1rem;
 }
 .form-container .form-outer{
   width: 100%;
   overflow: hidden;
 }
-.form-outer form{
-  display: flex;
-  width: 400%;
+.style-form{
+  font-size: 0.85rem;
+  font-weight: bold;
 }
-.form-outer form .page{
-  width: 25%;
-}
-.form-outer form .page .form-title{
-  text-align: left;
-  font-size: 25px;
-  font-weight: 600;
-}
-.form-outer form .page .field{
-  height: 45px;
-  width: 330px;
-  margin: 45px 0;
-  display: flex;
-  position: relative;
-}
-.form-outer form .page .field .label{
-  position: absolute;
-  top: -30px;
-  font-weight: 600;
-}
-.form-outer form .page .field input{
-  height: 100%;
+.form-outer form input{
   width: 100%;
-  border: 1px solid lightgrey;
-  border-radius: 5px;
-  font-size: 18px;
-  padding-left: 15px;
-}
-form .page .field select{
-  width: 100%;
-  padding-left: 10px;
-  font-size: 17px;
-  font-weight: 600;
-}
-.form-outer form .page .field button{
-  width: 100%;
-  height: calc(100% + 5px);
-  margin-top: -20px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  height: 2.5rem;
   border: none;
-  border-radius: 5px;
-  background: #d43f8d;
-  color: #fff;
-  font-size: 18px;
-  font-weight: 600;
-  letter-spacing: 1px;
-  text-transform: uppercase;
-  cursor: pointer;
-  transition: 0.3s ease;
+  margin-top: 0.35rem;
+  margin-bottom: 1rem;
+  font-size: 0.85rem;
 }
-.form-outer form .page .field button:hover{
-  background: #000;
-}
-.form-outer form .page .btns button{
-  margin-top: -20px !important;
-}
-form .page .btns button .prev{
-  margin-right: 3px;
-  font-size: 17px;
-}
-form .page .btns button .next{
-  margin-left: 3px;
-}
-.form-container .progress-bar{
-  display: flex;
-  margin: 40px 0;
-}
-.form-container .progress-bar .step{
-  position: relative;
-  text-align: center;
+.form-outer textarea{
   width: 100%;
+  box-sizing: border-box;
+  border-radius: 3px;
+  border: none;
+  margin-top: 0.5rem;
+  font-family: var(--Montserrat);
+  font-size: 0.85rem;
 }
-.form-container .progress-bar .step p{
-  font-size: 18px;
-  font-weight: 600;
-  color: #000;
-  margin-bottom: 8px;
+.form-outer button{
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  border: none;
+  margin: 1rem 0.1rem 0.1rem 0.1rem;
+  font-size: 0.9rem;
+  font-weight: bold;
+  transition: .3s;
+  background: #686d73;
+  color: white;
 }
-.progress-bar .step .bullet{
-  position: relative;
-  height: 25px;
-  width: 25px;
-  border: 2px solid black;
-  display: inline-block;
-  border-radius: 50%;
-  font-weight: 500;
-  font-size: 17px;
-  line-height: 25px;
+.form-outer button:hover{
+  background: #54575c;
+  color: white;
 }
-.progress-bar .step:last-child .bullet:before,
-.progress-bar .step:last-child .bullet:after{
-  display: none;
+.form-outer textarea:focus{
+  outline-color: var(--text-gold);
 }
-.progress-bar .step .bullet:before,
-.progress-bar .step .bullet:after{
-  position: absolute;
-  content: '';
-  bottom: 11px;
-  right: -51px;
-  height: 3px;
-  width: 44px;
-  background: #262626;
+.form-outer input:focus{
+  outline-color: var(--text-gold);
 }
-.progress-bar .step .bullet:after{
-  background: #d43f8d;
-  transform: scaleX(0);
-  transform-origin: left;
-  animation: animate 0.3s linear forwards;
-}
-@keyframes animate{
-100%{
-  transform: scaleX(1);
-}
-}
-.progress-bar .step span{
-  font-weight: 600;
-  font-size: 17px;
-  line-height: 25px;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.progress-bar .step .check{
-  position: absolute;
-  left: 50%;
-  top: 70%;
-  font-size: 15px;
-  transform: translate(-50% -50%);
-  display: none;
+.surname{
+  margin-bottom: 2.3rem !important;
 }
 /*------x------Forms----------x--------*/
 
