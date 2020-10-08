@@ -1510,6 +1510,9 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .bracelet{
     padding-top: 2.5rem !important;
   }
+  .form-container{
+    width: 60%;
+  }
 }
 
 /* ------ viewport less then or equal to 783px ----------*/
@@ -1631,6 +1634,9 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .about-img-2{
     width: 95%;
+  }
+  .form-container{
+    width: 70%;
   }
 
 }
