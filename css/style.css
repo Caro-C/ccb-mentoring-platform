@@ -612,15 +612,19 @@ Animated Site Title ---------x-------*/
 }
 
 .fa-users{
-  font-size: 1.8rem;
+  font-size: 1.7rem;
 }
 
 .fa-envelope-open{
-  font-size: 1.8rem;
+  font-size: 1.7rem;
+ }
+
+ .fa-heart{
+   font-size: 1.7rem;
  }
 
  .fa-user-check{
-   font-size: 1.8rem;
+   font-size: 1.7rem;
  }
 
  .fa-gem{
@@ -629,7 +633,7 @@ Animated Site Title ---------x-------*/
  }
 
  .coffee-big{
-   font-size: 1.8rem !important;
+   font-size: 1.7rem !important;
    color: black !important;
  }
 
