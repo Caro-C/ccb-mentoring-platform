@@ -558,7 +558,7 @@ Animated Site Title ---------x-------*/
 
 .network-tile{
   width: 30%;
-  padding: 2.1rem 1.5rem 3.6rem 1.5rem;
+  padding: 2.1rem 1.5rem 1.8rem 1.5rem;
   margin: 3.9rem 2.5rem 6.3rem 3rem;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -976,8 +976,18 @@ Animated Site Title ---------x-------*/
 .style-mentoring-button:focus{
   outline: none;
 }
-
-
+.style-calendly{
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-radius: 15px;
+  background: #f2f4f7;
+  padding: 0.7rem 1.5rem;
+  margin-bottom: 1.8rem;
+}
+.style-calendly:hover{
+  color: var(--text-gold);
+}
 /*------x------Mentor Collection Page-------x--------*/
 
 /*------------About Page---------------*/
