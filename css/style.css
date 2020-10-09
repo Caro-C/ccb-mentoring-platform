@@ -869,6 +869,7 @@ Animated Site Title ---------x-------*/
 /*------------Mentor Collection Page---------------*/
 .body-mentors{
   overflow: inherit !important;
+  scroll-behavior: smooth;
 }
 .our-mentors-heading{
   text-align: center;
