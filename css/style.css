@@ -1524,9 +1524,11 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .tile-right{
     margin-top: 0;
+    padding-bottom: 1.5rem !important;
   }
   .tile-left{
     margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem !important;
   }
   .about-img{
     padding-top: 3rem;
