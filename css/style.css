@@ -867,6 +867,9 @@ Animated Site Title ---------x-------*/
 /*-----x-------Site Content---------x----------*/
 
 /*------------Mentor Collection Page---------------*/
+.body-mentors{
+  overflow: inherit !important;
+}
 .our-mentors-heading{
   text-align: center;
   padding-bottom: 1rem;
