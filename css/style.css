@@ -1664,6 +1664,9 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .form-container{
     width: 70%;
   }
+  .our-mentors-container{
+    padding: 2rem;
+  }
 
 }
 
@@ -1750,5 +1753,8 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .style-form{
     font-size: 0.8;
+  }
+  .our-mentors-container{
+    padding: 1.5rem;
   }
 }
