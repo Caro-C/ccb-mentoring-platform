@@ -22,12 +22,15 @@ html, body{
   line-height: 1.8;
 }
 
-
 /* ----------------- Global Classes -------------------*/
 
 a{
   color: var(--text-gray);
   text-decoration: none;
+}
+
+img {
+  pointer-events: none;
 }
 
 .flex-row{
@@ -1559,6 +1562,10 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .social{
     justify-content: flex-start;
     padding-left: 50px;
+  }
+  .fa-linkedin-in{
+    margin-top: 75px;
+    margin-left: -115px;
   }
   .logo{
     font-size:2.5rem;
