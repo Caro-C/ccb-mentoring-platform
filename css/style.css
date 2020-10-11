@@ -1830,6 +1830,6 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .container-home{
     padding-top: 0rem !important;
-    padding-bottom: 3rem !important;
+    padding-bottom: 2rem !important;
   }
 }
