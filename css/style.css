@@ -1563,9 +1563,9 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
     justify-content: flex-start;
     padding-left: 50px;
   }
-  .fa-linkedin-in{
+  .linkedin-responsive{
     margin-top: 75px;
-    margin-left: -115px;
+    margin-left: -117px;
   }
   .logo{
     font-size:2.5rem;
