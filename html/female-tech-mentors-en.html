@@ -136,10 +136,20 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- Start of Site Content -->
     <section class="container">
       <div class="ccb-description-heading our-mentors-heading">Our Mentors<span class="gold"> <3</span></div>
+
+      <!-- Filter buttons -->
+      <div class="pv3">
+        <button class="filter-button button--is-active js-button-filter" data-category="all">Show all</button>
+        <button class="filter-button js-button-filter" data-category="product">Product Management</button>
+        <button class="filter-button js-button-filter" data-category="software">Software Engineering</button>
+        <button class="filter-button js-button-filter" data-category="ux">UI/UX</button>
+        <button class="filter-button js-button-filter" data-category="other">Others</button>
+      </div>
+
       <div class="our-mentors-container">
         <div class="our-mentors-grid">
 
-          <div class="mentor-tile" id="paula-en">
+          <div class="mentor-tile" id="paula-en" data-order="1" data-category="product">
             <img src="../assets/paula-mentor.PNG" class="mentor-page-img" alt="picture of mentor">
             <div class="mentor-name">Paula</div>
             <div class="mentor-prof">Senior IT Consultant<br><span class="mentor-home">Munich</span></div>
@@ -154,7 +164,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <!-- Calendly Link-Widget Ende -->
           </div>
 
-          <div class="mentor-tile" id="lissi-en">
+          <div class="mentor-tile" id="lissi-en" data-order="1" data-category="other">
             <img src="../assets/lissi-mentor.PNG" class="mentor-page-img" alt="picture of mentor">
             <div class="mentor-name">Elisabeth</div>
             <div class="mentor-prof">HMI Specialist<br><span class="mentor-home">Munich</span></div>
@@ -165,7 +175,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="mentor-card-heart"><span class="gold"><3</span></div>
           </div>
 
-          <div class="mentor-tile" id="lara-en">
+          <div class="mentor-tile" id="lara-en" data-order="1" data-category="product" >
             <img src="../assets/lara-mentor.PNG" class="mentor-page-img" alt="picture of mentor">
             <div class="mentor-name">Lara</div>
             <div class="mentor-prof">Senior Product Manager<br><span class="mentor-home">Munich</span></div>
@@ -176,7 +186,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="mentor-card-heart"><span class="gold"><3</span></div>
           </div>
 
-          <div class="mentor-tile" id="caro-en">
+          <div class="mentor-tile" id="caro-en" data-order="1" data-category="product">
             <img src="../assets/caro-mentor.PNG" class="mentor-page-img" alt="picture of mentor">
             <div class="mentor-name">Caro</div>
             <div class="mentor-prof">Founder CoffeeCodeBreak<br><span class="mentor-home">Munich</span></div>
