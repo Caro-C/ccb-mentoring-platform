@@ -1811,4 +1811,8 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .our-mentors-container{
     padding: 1.5rem;
   }
+  .pv3{
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
 }
