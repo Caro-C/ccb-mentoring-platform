@@ -877,6 +877,7 @@ Animated Site Title ---------x-------*/
 /*-----x-------Site Content---------x----------*/
 
 /*------------Mentor Collection Page---------------*/
+
 .body-mentors{
   overflow: inherit !important;
   -webkit-overflow-scrolling: touch;
@@ -893,9 +894,48 @@ Animated Site Title ---------x-------*/
   grid-gap: 3.5rem;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
+
+.pv3{
+  margin-top: 2.5rem;
+  margin-left: 3.5rem;
+  margin-right: 3.5rem;
+}
+
+.filter-button{
+  margin-right: 0.4rem;
+  margin-top: 0.6rem;
+  padding: 0rem 1.1rem;
+  height: 40px;
+  width: auto;
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  background: #f2f4f7;
+}
+
+.filter-button:hover{
+  background: #5d6470;
+  color: white;
+}
+
+.button--is-active{
+  background: #5d6470;
+  color: white;
+}
+
+.button--is-active:focus{
+  border: none;
+  outline: none;
+}
+
 .mentor-tile{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
+  max-width: 460px;
 }
 .mentor-tile:hover{
   opacity: 0.77;
@@ -1551,6 +1591,10 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .form-container{
     width: 60%;
   }
+  .our-mentors-grid{
+    grid-gap: 2.2rem;
+      grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  }
 }
 
 /* ------ viewport less then or equal to 783px ----------*/
@@ -1744,9 +1788,6 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .bracelet-style{
     padding-bottom: 1.5rem;
     margin-top: -2rem;
-  }
-  .our-mentors-grid{
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
   .who-tile-left{
     padding-bottom: 0;
