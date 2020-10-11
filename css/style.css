@@ -1256,6 +1256,11 @@ footer{
 .fa-chevron-circle-up{
   font-size: 1rem;
 }
+
+.fa-envelope{
+  font-size: 1.1rem;
+  margin-top: 0.8rem;
+}
 /*---------x---------Footer--------x--------*/
 
 /*-------------Copyright-------------------*/
@@ -1565,7 +1570,7 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .linkedin-responsive{
     margin-top: 75px;
-    margin-left: -117px;
+    margin-left: -119px;
   }
   .logo{
     font-size:2.5rem;
