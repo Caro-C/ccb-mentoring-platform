@@ -1650,7 +1650,7 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
     flex-direction: column;
   }
   .about-img-2{
-    width: 80%;
+    width: 98%;
   }
 }
 
@@ -1673,9 +1673,6 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .metoring-sub-heading-outter{
     font-size: 0.8rem;
-  }
-  .about-img-2{
-    width: 95%;
   }
   .form-container{
     width: 70%;
