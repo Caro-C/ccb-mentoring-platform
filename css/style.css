@@ -505,6 +505,25 @@ Animated Site Title ---------x-------*/
   outline: none !important;
 }
 
+.overlay-button{
+  font-family: var(--Montserrat);
+  background: white;
+  border: none;
+  border-radius: 20px;
+  margin-top: 3rem;
+  padding: 0.75rem 1.6rem;
+  font-size: 0.75rem;
+  font-weight: bold;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+  outline: none;
+}
+
+.overlay-button:hover{
+  color: var(--text-gold);
+  cursor: pointer;
+}
+
 /*-------x-----Slide Show ---------x-------*/
 
 /*--------Ressources Section--------------------*/
@@ -623,10 +642,12 @@ Animated Site Title ---------x-------*/
   letter-spacing: 0.6px;
   outline: none;
   font-weight: bold;
+  font-family: var(--Montserrat);
 }
 
 .learn-more:hover{
   color: var(--text-gold);
+  cursor: pointer;
 }
 
 .fa-coffee{
@@ -680,6 +701,7 @@ Animated Site Title ---------x-------*/
   padding: 0.8rem 2.5rem;
   border-radius: 20px;
   background-color: #f2f4f7;
+  font-family: var(--Montserrat);
 }
 
 .mentoring-button:hover{
@@ -927,6 +949,7 @@ Animated Site Title ---------x-------*/
 }
 
 .filter-button{
+  font-family: var(--Montserrat);
   margin-right: 0.4rem;
   margin-top: 0.6rem;
   padding: 0rem 1.1rem;
@@ -938,13 +961,14 @@ Animated Site Title ---------x-------*/
   text-transform: uppercase;
   font-size: 0.7rem;
   font-weight: 600;
-  letter-spacing: 1px;
+  letter-spacing: 0.7px;
   background: #f2f4f7;
 }
 
 .filter-button:hover{
   background: #5d6470;
   color: white;
+  cursor: pointer;
 }
 
 .button--is-active{
@@ -1051,6 +1075,7 @@ Animated Site Title ---------x-------*/
 
 .style-mentoring-button:hover{
   color: var(--text-gold);
+  cursor: pointer;
 }
 .style-mentoring-button:focus{
   outline: none;
@@ -1066,6 +1091,7 @@ Animated Site Title ---------x-------*/
 }
 .style-calendly:hover{
   color: var(--text-gold);
+  cursor: pointer;
 }
 /*------x------Mentor Collection Page-------x--------*/
 
