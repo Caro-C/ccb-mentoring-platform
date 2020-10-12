@@ -511,6 +511,7 @@ Animated Site Title ---------x-------*/
   border: none;
   border-radius: 20px;
   margin-top: 3rem;
+  margin-bottom: 2rem;
   padding: 0.75rem 1.6rem;
   font-size: 0.75rem;
   font-weight: bold;
@@ -1602,6 +1603,9 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .content > h2{
     font-size: 3.2rem;
   }
+  .overlay-button{
+    font-size: 0.6rem !important;
+  }
 /* ------ viewport less then or equal to 862px ----------*/
 @media only screen and (max-width: 862px){
   .ccb-description{
@@ -1780,7 +1784,6 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .our-mentors-container{
     padding: 2rem;
   }
-
 }
 
 /* ------ viewport less then or equal to 470px ----------*/
