@@ -11,12 +11,12 @@ $(document).ready(function(){
     margin:10,
     responsiveClass:true,
     autoplaySpeed: 1500,
-    autoplayTimeout: 5000,
+    autoplayTimeout: 3300,
     smartSpeed: 1000,
     responsive:{
         0:{
             items:1,
-            autoplay: false
+            autoplay: true
         },
         630:{
             items:2,
