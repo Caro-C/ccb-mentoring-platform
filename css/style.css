@@ -1604,7 +1604,7 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
     font-size: 3.2rem;
   }
   .overlay-button{
-    margin-top: 2rem;
+    margin-top: 1.7rem;
     font-size: 0.6rem !important;
   }
 /* ------ viewport less then or equal to 862px ----------*/
