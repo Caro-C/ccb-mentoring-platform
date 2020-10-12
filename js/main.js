@@ -11,7 +11,7 @@ $(document).ready(function(){
     margin:10,
     responsiveClass:true,
     autoplaySpeed: 1500,
-    autoplayTimeout: 3300,
+    autoplayTimeout: 2800,
     smartSpeed: 1000,
     responsive:{
         0:{
