@@ -84,7 +84,7 @@ $(document).ready(function() {
     let newSidebar = [];
 
     $('.button--is-active').toggleClass('button--is-active');
-    $(`.filter-button[data-category=${cat}]`).toggleClass('button--is-active');
+    $(`.filter-button[data-category*=${cat}]`).toggleClass('button--is-active');
 
     $grid.fadeOut( "slow", function() {
 
@@ -93,7 +93,7 @@ $(document).ready(function() {
       if(cat === 'all') {
         $items.sort(sortItems).detach().appendTo($grid);
       } else {
-        $(`.mentor-tile:not([data-category=${cat}])`).each(function() {
+        $(`.mentor-tile:not([data-category*=${cat}])`).each(function() {
           newSidebar.push($(this).detach());
         });
       }
