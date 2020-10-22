@@ -534,6 +534,77 @@ Animated Site Title ---------x-------*/
 }
 /*----x----Ressources Section---------x-----------*/
 
+/*------------At a glance Section---------------------*/
+.more-about-mission{
+  font-size: 0.73rem;
+  margin: 0rem 1.5rem 3rem 1.5rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 7px 0 rgba(0, 0, 0, 0.19);
+  background: white;
+  letter-spacing: 0.6px;
+  outline: none;
+  font-weight: bold;
+  font-family: var(--Montserrat);
+}
+
+.more-about-mission:hover{
+  cursor: pointer;
+  color: var(--text-gold);
+}
+
+.mission-container{
+  margin-top: 1rem;
+  margin-bottom: 0.7rem;
+}
+
+.mentor-card-heart-mission{
+  font-family: var(--Caveat);
+  font-size: 1.8rem;
+}
+
+.one-glance{
+  padding: 4rem 3.5rem 3rem 3.5rem;
+  margin-top: -1.2rem;
+}
+
+.one-glance-grid{
+  display: grid;
+  grid-gap: 3.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.one-glance-tile{
+  text-align: center;
+  max-width: 460px;
+  padding: 0.8rem;
+}
+
+.one-glance-main-heading{
+  text-align: center;
+  padding-bottom: 2.5rem;
+}
+
+.one-glance-heading{
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+.improve-heart{
+  padding-bottom: 0rem !important;
+}
+
+.one-glance-text{
+  font-size: 0.85rem;
+}
+
+.fa-quote-right{
+  font-size: 1.2rem;
+}
+
+/*-----x-------At a glance Section------------x---------*/
+
 /*----------What is CoffeeCodebreak Section-----------*/
 .what-is-ccb{
   display: flex;
@@ -575,6 +646,29 @@ Animated Site Title ---------x-------*/
   font-size: 1.2rem;
 }
 
+.to-our-mentors{
+  font-size: 0.8rem;
+  margin: 4rem 1.5rem 0rem 1.5rem;
+  padding: 0.7rem 1.5rem;
+  border: none;
+  border-radius: 20px;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 2px 7px 0 rgba(0, 0, 0, 0.19);
+  background: white;
+  letter-spacing: 0.6px;
+  outline: none;
+  font-weight: bold;
+  font-family: var(--Montserrat);
+}
+
+.to-our-mentors:hover{
+  cursor: pointer;
+  color: var(--text-gold);
+}
+
+.button-position{
+  text-align: center;
+}
+
 .network{
   width: 30%;
 }
@@ -595,6 +689,7 @@ Animated Site Title ---------x-------*/
 }
 
 .mission{
+  padding-top: 2.5rem;
   padding-bottom: 0;
 }
 
@@ -936,6 +1031,7 @@ Animated Site Title ---------x-------*/
 }
 .our-mentors-container{
   padding: 3.5rem;
+  padding-bottom: 2.5rem;
 }
 .our-mentors-grid{
   display: grid;
@@ -1651,7 +1747,11 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .our-mentors-grid{
     grid-gap: 2.2rem;
-      grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
+  }
+  .one-glance-grid{
+    grid-gap: 2.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(225px, 1fr));
   }
 }
 
