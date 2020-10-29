@@ -1149,9 +1149,10 @@ Animated Site Title ---------x-------*/
 /* The Modal (background) */
 .modal {
   display: none; /* Hidden by default */
-  position: fixed; /* Stay in place */
+  position: absolute; /* Stay in place */
   z-index: 1; /* Sit on top */
-  padding-top: 25vh; /* Location of the box */
+  padding-top: 5vh;/* Location of the box */
+  padding-bottom: 5vh;
   left: 0;
   top: 0;
   width: 100%; /* Full width */
@@ -1166,21 +1167,40 @@ Animated Site Title ---------x-------*/
 .modal-content {
   background-color: #fefefe;
   margin: auto;
-  padding: 1rem 2rem 1rem 2rem;
-  width: 50%;
+  padding: 1rem 2.5rem 1rem 2.5rem;
+  width: 75%;
   border-radius: 4px;
   box-shadow: 0 2px 5px 0 rgba(0,0,0,0.25);
 }
 
 .modal-header{
-  font-size: 0.9rem;
+  font-size: 1rem;
   font-weight: bold;
   padding-top: 1.8rem;
   padding-bottom: 1.5rem;
 }
 
 .modal-text{
+  font-size: 0.8rem;
+  padding-top: 0.8rem;
+}
 
+.booking-list{
+  text-align: left;
+  padding-left: 6rem;
+  padding-right: 6rem;
+}
+
+.booking-list > li{
+  padding-bottom: 0.5rem;
+}
+
+.underline-link{
+  text-decoration: underline;
+}
+
+.underline-link:hover{
+  color: var(--text-gold);
 }
 
 /* The Close Button */
@@ -1829,6 +1849,10 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
     margin-top: 1.7rem;
     font-size: 0.6rem !important;
   }
+  .booking-list{
+    padding-left: 1.7rem;
+    padding-right: 1.7rem;
+  }
 /* ------ viewport less then or equal to 862px ----------*/
 @media only screen and (max-width: 862px){
   .ccb-description{
@@ -1989,6 +2013,12 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .filter-button{
     margin-right: 0rem !important;
+  }
+  .modal-header{
+    font-size: 0.9rem;
+  }
+  .modal-text{
+    font-size: 0.78rem;
   }
 }
 
