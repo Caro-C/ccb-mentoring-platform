@@ -132,3 +132,41 @@ accordionItemHeaders.forEach(accordionItemHeader => {
 
   });
 });
+
+// Modal Box for booking Sessions
+// Get the modal
+var modal = document.querySelectorAll(".myModal");
+
+// Get the button that opens the modal
+var btn = document.querySelectorAll(".myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.querySelectorAll(".close");
+
+// When the user clicks the button, open the modal
+btn.forEach(function(btns, index){
+btns.onclick = function() {
+  modal[index].style.display = "block";
+}
+});
+
+// When the user clicks on <span> (x), close the modal
+span.forEach(function(spans, index){
+spans.onclick = function() {
+ modal[index].style.display = "none";
+}
+});
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+ modal.forEach(function(modals, index){
+ if (event.target == modals) {
+    modal[index].style.display = "none";
+  }
+ })
+};
+
+
+$(".style-calendly").on("click", function(){
+       $(".modal").fadeOut();
+});
