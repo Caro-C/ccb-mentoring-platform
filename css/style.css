@@ -1160,7 +1160,7 @@ Animated Site Title ---------x-------*/
   overflow: auto; /* Enable scroll if needed */
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-  transition: .5s ease-in;
+  transition: 0.6s ease-in;
 }
 
 /* Modal Content */
@@ -1853,6 +1853,9 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .booking-list{
     padding-left: 1.7rem;
     padding-right: 1.7rem;
+  }
+  .modal-content{
+    width: 65%;
   }
 /* ------ viewport less then or equal to 862px ----------*/
 @media only screen and (max-width: 862px){
