@@ -297,18 +297,18 @@ h5{
 
 .become-a-mentor-btn{
   margin-top: -0.2rem !important;
-  margin-right: 1rem;
+  margin-right: 0.85rem;
   padding: 0.5rem;
   background: black;
   color: white !important;
-  font-size: 0.75rem;
+  font-size: 0.71rem;
   font-weight: bold;
   border-radius: 7px;
   height: 22px;
 }
 
 .become-a-mentor-btn:hover{
-  background: #e4e7ed;
+  background: #e9edf5;
   color: black !important;
   cursor: pointer;
 }
