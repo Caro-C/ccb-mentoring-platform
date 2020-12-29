@@ -1379,6 +1379,45 @@ Animated Site Title ---------x-------*/
   padding-bottom: 0;
 }
 
+.team-tile{
+  text-align: center;
+  max-width: 300px;
+}
+
+.team-grid{
+  padding-left: 6rem;
+  padding-right: 6rem;
+  margin-bottom: 4rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.team-heading{
+  font-family: var(--Caveat);
+  font-size: 2.5rem;
+  margin-top: -0.5rem;
+  padding-bottom: 2rem;
+  padding-left: 1.8rem;
+  padding-right: 1.8rem;
+  text-align: center;
+}
+
+.team-name{
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  padding-bottom: 0.8rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.mentor-pic:hover{
+  -webkit-filter: grayscale(100%);
+   -moz-filter: grayscale(100%);
+   -ms-filter: grayscale(100%);
+   filter: grayscale(100%);
+   filter: gray;
+}
+
 /*------x------About Page--------x-------*/
 
 /*------------Forms------------------*/
