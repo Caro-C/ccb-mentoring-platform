@@ -1410,7 +1410,7 @@ Animated Site Title ---------x-------*/
   padding-right: 1.5rem;
 }
 
-.mentor-pic{
+.team-pic{
   -webkit-filter: grayscale(100%);
    -moz-filter: grayscale(100%);
    -ms-filter: grayscale(100%);
@@ -1418,7 +1418,7 @@ Animated Site Title ---------x-------*/
    filter: gray;
 }
 
-.mentor-pic:hover{
+.team-pic:hover{
   -webkit-filter: none;
    -moz-filter: none;
    -ms-filter: none;
