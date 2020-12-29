@@ -1410,12 +1410,19 @@ Animated Site Title ---------x-------*/
   padding-right: 1.5rem;
 }
 
-.mentor-pic:hover{
+.mentor-pic{
   -webkit-filter: grayscale(100%);
    -moz-filter: grayscale(100%);
    -ms-filter: grayscale(100%);
    filter: grayscale(100%);
    filter: gray;
+}
+
+.mentor-pic:hover{
+  -webkit-filter: none;
+   -moz-filter: none;
+   -ms-filter: none;
+   filter: none;
 }
 
 /*------x------About Page--------x-------*/
@@ -2082,6 +2089,9 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .modal-text{
     font-size: 0.78rem;
   }
+  .team-grid{
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  }
 }
 
 /* ------ viewport less then or equal to 518px ----------*/
@@ -2109,6 +2119,9 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   }
   .our-mentors-container{
     padding: 2rem;
+  }
+  .team-grid{
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
 }
 
@@ -2204,5 +2217,8 @@ input[type=button]:hover, input[type=submit]:hover, input[type=reset]:hover{
   .container-home{
     padding-top: 0rem !important;
     padding-bottom: 2rem !important;
+  }
+  .team-grid{
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   }
 }
