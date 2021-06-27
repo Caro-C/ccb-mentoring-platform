@@ -172,12 +172,9 @@ $(".style-calendly").on("click", function(){
 });
 
 // Register events in HTML with Plausible
-// Handle link events - those that have data-analytics
-let elements = document.querySelectorAll("a[data-analytics]");
-registerAnalyticsEvents(elements, handleLinkEvent);
 
 // Handle button form events - those that have data-analytics
-elements = document.querySelectorAll("button[data-analytics]");
+let elements = document.querySelectorAll("button[data-analytics]");
 registerAnalyticsEvents(elements, handleFormEvent);
 
 /**
@@ -193,36 +190,7 @@ function registerAnalyticsEvents(elements, callback) {
     }
 }
 
-/**
-* Handle Link Events with plausible
-* https://github.com/plausible/analytics/blob/e1bb4368460ebb3a0bb86151b143176797b686cc/tracker/src/plausible.js#L74
-*
-* @param {Event} click
-*/
-function handleLinkEvent(event) {
-    var link = event.target;
-    var middle = event.type == "auxclick" && event.which == 2;
-    var click = event.type == "click";
-    while (link && (typeof link.tagName == 'undefined' || link.tagName.toLowerCase() != 'a' || !link.href)) {
-        link = link.parentNode;
-    }
-
-    if (middle || click)
-        registerEvent(link.getAttribute('data-analytics'));
-
-    // Delay navigation so that Plausible is notified of the click
-    if (!link.target) {
-        if (!(event.ctrlKey || event.metaKey || event.shiftKey) && click) {
-            setTimeout(function () {
-                location.href = link.href;
-            }, 150);
-            event.preventDefault();
-        }
-    }
-}
-
-/**
-* Handle form button submit events with plausible
+/** Handle form button submit events with plausible
 *
 * @param {Event} click
 */
