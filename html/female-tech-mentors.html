@@ -74,7 +74,6 @@
 
   <!-- Plausible -->
   <script defer data-domain="coffeecodebreak.de" src="https://plausible.io/js/plausible.js"></script>
-  <script>window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }</script>
   <!-- End of Plausible -->
 
 </head>
@@ -178,7 +177,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
             <div class="mentor-lang">Deutsch, Englisch</div>
             <div class="mentor-topics"><strong>Lass uns reden über:</strong><br>Product Management, Computer Science, Personal Branding, Consulting, eCommerce</div><br>
 
-            <form><button type="submit" data-analytics="Book-a-session" class="myBtn">Book a Session</button></form>
+            <button class="myBtn">Book a Session</button>
             <div class="myModal modal">
               <div class="modal-content">
                 <div class="close">&times;</div>
@@ -201,7 +200,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <!-- Calendly link widget begin -->
                 <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
                 <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/lenajohn'});return false;" class="style-calendly">Alles klar. Los geht's!</a>
+                <a href="" onclick="Calendly.initPopupWidget({url: 'https://calendly.com/lenajohn'});return false;" data-analytics='"Book-a-session"' class="style-calendly">Alles klar. Los geht's!</a>
                 <!-- Calendly link widget end -->
 
               </div>
