@@ -213,16 +213,6 @@ function handleLinkEvent(event) {
 
     if (middle || click)
         registerEvent(link.getAttribute('data-analytics'));
-
-    // Delay navigation so that Plausible is notified of the click
-    if (!link.target) {
-        if (!(event.ctrlKey || event.metaKey || event.shiftKey) && click) {
-            setTimeout(function () {
-                location.href = link.href;
-            }, 300);
-            event.preventDefault();
-        }
-    }
 }
 
 /**
