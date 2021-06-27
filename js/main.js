@@ -201,6 +201,10 @@ function handleFormEvent(event) {
     event.preventDefault();
 
     registerEvent(event.target.getAttribute('data-analytics'));
+
+    setTimeout(function () {
+        event.target.form.submit();
+    }, 150);
 }
 
 /**
