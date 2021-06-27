@@ -171,6 +171,9 @@ $(".style-calendly").on("click", function(){
        $(".modal").fadeOut();
 });
 
+
+
+
 // Register events in HTML with Plausible
 
 // Handle button form events - those that have data-analytics
@@ -198,10 +201,6 @@ function handleFormEvent(event) {
     event.preventDefault();
 
     registerEvent(event.target.getAttribute('data-analytics'));
-
-    setTimeout(function () {
-        event.target.form.submit();
-    }, 150);
 }
 
 /**
