@@ -220,6 +220,7 @@ function handleLinkEvent(event) {
             setTimeout(function () {
                 location.href = link.href;
             }, 0);
+            event.preventDefault();
         }
     }
 }
