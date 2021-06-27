@@ -1168,6 +1168,15 @@ Animated Site Title ---------x-------*/
   padding-right: 1.5rem;
 }
 
+.mentor-social{
+  color: var(--text-gold);
+  font-size: 0.9rem !important;
+}
+
+.mentor-social:hover{
+  color: #c2910a;
+}
+
 
 /* The Modal (background) */
 .modal {
