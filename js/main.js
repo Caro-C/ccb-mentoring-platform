@@ -219,7 +219,7 @@ function handleLinkEvent(event) {
         if (!(event.ctrlKey || event.metaKey || event.shiftKey) && click) {
             setTimeout(function () {
                 location.href = link.href;
-            }, 0);
+            }, 300);
             event.preventDefault();
         }
     }
