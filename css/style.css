@@ -862,6 +862,24 @@ Animated Site Title ---------x-------*/
 .get-to-know-heading{
   margin-top: 0.3rem;
 }
+
+.itgirls-logo{
+  margin-top: 0.5rem;
+  margin-bottom: 3rem;
+  max-width: 150px;
+}
+
+.fix-link{
+  padding-top:4.3rem;
+}
+
+.partner-initiatives{
+  padding-bottom: 1.7rem;
+}
+
+.support-us-section{
+  margin-top: 0.5rem !important;
+}
 /*-----x-----What is CoffeeCodebreak Section------x-----*/
 
 /*---------Blog Heading----------------------*/
