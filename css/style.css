@@ -1473,6 +1473,9 @@ Animated Site Title ---------x-------*/
 .team-tile{
   text-align: center;
   max-width: 300px;
+  padding-bottom: 1.2rem;
+  box-shadow: 0 0.5px 1px 0 rgb(0 0 0 / 5%), 0 6px 20px 0 rgb(0 0 0 / 5%);
+    margin: 0.2rem;
 }
 
 .team-grid{
@@ -1514,6 +1517,24 @@ Animated Site Title ---------x-------*/
    -moz-filter: none;
    -ms-filter: none;
    filter: none;
+}
+
+.core-team-function{
+  font-size: 0.85rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.core-team-social{
+  padding-left: 0.3rem;
+}
+
+.core-team-social:hover{
+  color: var(--text-gold);
+}
+
+.core-team-contact{
+  font-size: 0.9rem !important;
 }
 
 /*------x------About Page--------x-------*/
