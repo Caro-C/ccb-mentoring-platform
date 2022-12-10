@@ -1359,6 +1359,11 @@ Animated Site Title ---------x-------*/
   font-weight: bold;
   padding-bottom: 0.5rem;
 }
+
+#ellens-blog{
+  color: var(--text-gold);
+  text-decoration: underline;
+}
 /*------x------Mentor Collection Page-------x--------*/
 
 /*--------------FAQ Page------------------------*/
