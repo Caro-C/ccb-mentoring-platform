@@ -135,13 +135,13 @@ accordionItemHeaders.forEach(accordionItemHeader => {
 
 // Modal Box for booking Sessions
 // Get the modal
-var modal = document.querySelectorAll(".myModal");
+const modal = document.querySelectorAll(".myModal");
 
 // Get the button that opens the modal
-var btn = document.querySelectorAll(".myBtn");
+const btn = document.querySelectorAll(".myBtn");
 
 // Get the <span> element that closes the modal
-var span = document.querySelectorAll(".close");
+const span = document.querySelectorAll(".close");
 
 // When the user clicks the button, open the modal
 btn.forEach(function(btns, index){
@@ -160,7 +160,7 @@ spans.onclick = function() {
 // When the user clicks anywhere outside of the modal, close it
 window.onclick = function(event) {
  modal.forEach(function(modals, index){
- if (event.target == modals) {
+ if (event.target === modals) {
     modal[index].style.display = "none";
   }
  })
